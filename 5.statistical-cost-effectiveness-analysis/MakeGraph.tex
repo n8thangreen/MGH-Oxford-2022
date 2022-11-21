@@ -1,0 +1,152 @@
+\documentclass[10pt]{beamer}
+%\usepackage{ucltemplate}
+\usepackage{pstricks,pst-node,pst-text,pst-3d,hyperref,color,epsfig,eurosym}	% pstricks-add,
+\usepackage[UKenglish]{babel}
+\usefonttheme[onlymath]{serif}
+
+\newrgbcolor{myblue}{0.14 0.34 0.55}
+
+\mode<presentation>
+\usetheme{default} %Boadilla Singapore Warsaw
+%\usetheme{Boadilla}
+%\setbeamercovered{transparent} %
+\setbeamertemplate{itemize item}{$\bullet$} %
+\setbeamertemplate{itemize subitem}{--} %
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+%\frame{
+%\begin{center}
+%\vspace{10pt}
+%Cost-effectiveness plane \\\vspace{-25pt}
+%\includegraphics[scale=.55]{/home/gianluca/Dropbox/UCL/ResMethods3/CEPlane_empty}
+%\rput(-1,3.6){\fontsize{8}{8}\selectfont $\Delta_e$}
+%\rput(-5.5,6.9){\fontsize{8}{8}\selectfont $\Delta_c$}
+%\rput(-2,5.1){\fontsize{8}{8}\selectfont $\white\mbox{ICER}=\frac{\mbox{E$[\Delta_c]$}}{\mbox{E$[\Delta_e]$}}=\mbox{Cost per QALY}$} 
+%\end{center}
+%}
+
+%%\frame{
+%%\begin{center}
+%%\vspace{10pt}
+%%Cost-effectiveness plane \\\vspace{-25pt}
+%%\includegraphics[scale=.55]{/home/gianluca/Dropbox/UCL/ResMethods3/CEPlane_ICER}
+%%\rput(-1,3.6){\fontsize{8}{8}\selectfont $\Delta_e$}
+%%\rput(-5.5,6.9){\fontsize{8}{8}\selectfont $\Delta_c$}
+%%\rput(-2,5.1){\fontsize{8}{8}\selectfont $\mbox{ICER}=\frac{\mbox{E$[\Delta_c]$}}{\mbox{E$[\Delta_e]$}}=\mbox{Cost per QALY}$} 
+%%\end{center}
+%%}
+%
+
+%%\frame{
+%%\vspace{-20pt}
+%%\begin{center} 
+%%\begin{psmatrix}[rowsep=0.001cm ,colsep=1.5cm]
+%%{\fontsize{7}{7}\selectfont \sffamily \textbf{Treatment}} & {\fontsize{7}{7}\selectfont \sffamily \textbf{Side effects}} & {{\fontsize{7}{7}\selectfont \sffamily \textbf{2nd line treatment}}} & {\hspace{-30pt}\fontsize{7}{7}\selectfont \sffamily \textbf{Effect}} & {\hspace{-40pt}\fontsize{7}{7}\selectfont \sffamily \textbf{Cost}} \\
+%%& & {\parbox[l]{2.3cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue A_0$ \\Ambulatory care\\ ($\magenta\gamma$)\end{center}}} & 
+%%\hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 0}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_0^{\rm{drug}}+c^{\rm{amb}}$}} \\[-20pt]
+%%& {\parbox[c]{1.6cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue SE_0$ \\Blood-related side effects\\ ($\magenta\pi_0$)\end{center}}} \\[-20pt]
+%%& & {\parbox[c]{2.3cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue H_0$ \\ Hospital admission\\ ($\magenta 1-\gamma$)\end{center}}} & \hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 0}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_0^{\rm{drug}}+c^{\rm{hosp}}$}}  \\[-20pt]
+%%\hspace{0pt} {\parbox[l]{1.1cm}{\fontsize{7}{7}\selectfont \sffamily $\hspace{10pt}\myblue N$ \\ Standard treatment}}\\[-0pt]
+%%& {\parbox[c]{1.6cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue N-SE_0$ \\No side effects\\ ($\magenta 1-\pi_0$)\end{center}}} & & \hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 1}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_0^{\rm{drug}}$}}\\[-5pt]
+%%
+%%& & {\parbox[l]{2.3cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue A_1$ \\Ambulatory care\\ ($\magenta\gamma$)\end{center}}} & \hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 0}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_1^{\rm{drug}}+c^{\rm{amb}}$}} \\[-20pt]
+%%& {\parbox[c]{1.6cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue SE_1$ \\Blood-related side effects\\ ($\magenta\pi_1=\rho\pi_0$)\end{center}}} \\[-20pt]
+%%& & {\parbox[c]{2.3cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue H_1$ \\ Hospital admission\\ ($\magenta 1-\gamma$)\end{center}}} & \hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 0}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_1^{\rm{drug}}+c^{\rm{hosp}}$}}  \\[-20pt]
+%%\hspace{0pt} {\parbox[l]{1.1cm}{\fontsize{7}{7}\selectfont \sffamily $\hspace{10pt}\myblue N$ \\ New drug}}\\[-0pt]
+%%& {\parbox[c]{1.6cm}{\fontsize{7}{7}\selectfont \sffamily \begin{center}$\myblue N-SE_1$ \\No side effects\\ ($\magenta 1-\pi_1$)\end{center}}} & & \hspace{-20pt}{\parbox[l]{.5cm}{\fontsize{7}{7}\selectfont\sffamily 1}} & \hspace{-30pt}{\parbox[l]{1.5cm}{\fontsize{7}{7}\selectfont\sffamily $c_1^{\rm{drug}}$}} \\[-20pt]
+%%
+%%\psset{arrows=-}
+%%\ncangle[angleA=180,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{5,1}{10,1}
+%%\psset{arrows=->} 
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{5,1}{3,2}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{5,1}{6,2}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{3,2}{2,3}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{3,2}{4,3}
+%%
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{10,1}{8,2}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{10,1}{11,2}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{8,2}{7,3}
+%%\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{8,2}{9,3}
+%%
+%%\end{psmatrix}
+%%\end{center}
+%%}
+
+\frame{
+\frametitle{EVPI}
+\vspace{40pt}
+\begin{psmatrix}[rowsep=0.01cm ,colsep=0.5cm]
+& & & & \only<1-4>{\white\fontsize{7}{7}\selectfont \sffamily Standard} \only<5->{\fontsize{7}{7}\selectfont \sffamily Standard} \\
+& & \only<1-4>{\parbox[l]{1.4cm}{\white\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.2$\\$\white (P=0.19)$}}  \only<5->{\parbox[l]{1.4cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.2$\\$\red (P=0.19)$}} \\
+& & & & \only<1-4>{\hspace{-4.6pt}\white\fontsize{7}{7}\selectfont \sffamily New drug} \only<5>{\hspace{-4.6pt}\fontsize{7}{7}\selectfont \sffamily New drug} \only<6->{\hspace{-7pt}\fontsize{7}{7}\selectfont \sffamily \textbf{\blue New drug}} \\
+{\fontsize{7}{7}\selectfont \sffamily Buy information} & \only<1-4>{\white\fontsize{7}{7}\selectfont \sffamily \pscirclebox[linecolor=white,linewidth=.5pt]{$\pi$}} \only<5->{\fontsize{7}{7}\selectfont \sffamily \pscirclebox[linecolor=black,linewidth=.5pt]{$\pi$}} \\
+& & & & \only<1-4>{\white\fontsize{7}{7}\selectfont \sffamily Standard} \only<5>{\fontsize{7}{7}\selectfont \sffamily Standard} \only<6->{\hspace{-2pt}\fontsize{7}{7}\selectfont \sffamily \textbf{\blue Standard}} \\
+& & \only<1-4>{\parbox[l]{1.4cm}{\white\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.05$\\$\white(P=0.81)$}} \only<5->{\parbox[l]{1.4cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.05$\\$\red(P=0.81)$}} \\
+& & & & \only<1-4>{\white\fontsize{7}{7}\selectfont \sffamily New drug} \only<5->{\fontsize{7}{7}\selectfont \sffamily\hspace{-2pt} New drug} \\[20pt] 
+
+& & & & \only<2->{\parbox[l]{1.2cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.2$\\$(P=0.5)$}} & \\ 
+& & \only<2->{\fontsize{7}{7}\selectfont \sffamily Standard} & \only<2->{\fontsize{7}{7}\selectfont \sffamily \pscirclebox[linecolor=black,linewidth=.5pt]{$\pi$}} \\
+& & & & \only<2->{\parbox[l]{1.2cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.05$\\$(P=0.5)$}} & \\ 
+{\fontsize{7}{7}\selectfont \sffamily Make decision} & \only<2->{\fontsize{7}{7}\selectfont \sffamily $\blacksquare$} \\ 
+& & & & \only<2->{\parbox[l]{1.2cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.2$\\$(P=0.5)$}} & \\ 
+& & \only<2-3>{\hspace{-2.5pt}\fontsize{7}{7}\selectfont \sffamily New drug} \only<4->{\hspace{-2.5pt}\fontsize{7}{7}\selectfont \sffamily \textbf{\blue New drug}}
+& \only<2->{\fontsize{7}{7}\selectfont \sffamily \pscirclebox[linecolor=black,linewidth=.5pt]{$\pi$}}\\ 
+& & & & \only<2->{\parbox[l]{1.2cm}{\centering\fontsize{7}{7}\selectfont \sffamily $\pi = 0.05$\\$(P=0.5)$}} & \\ 
+
+
+\psset{arrows=->} 
+\only<5->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{2,3}{1,5}}
+\only<6->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.9pt,nodesep=4pt,linecolor=blue]{2,3}{3,5}}
+\only<5>{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{2,3}{3,5}}
+\only<5>{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{6,3}{5,5}}
+\only<6->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.9pt,nodesep=4pt,linecolor=blue]{6,3}{5,5}}
+\only<5->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{6,3}{7,5}}
+\only<5->{\ncangle[angleA=90,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{4,2}{2,3}}
+\only<5->{\ncangle[angleA=270,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{4,2}{6,3}}
+
+\only<2->{\ncangle[angleA=90,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{11,2}{9,3}}
+\only<2->{\ncangle[angleA=270,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{11,2}{13,3}}
+\only<4->{\ncangle[angleA=270,angleB=180,ncurv=1,linewidth=.9pt,nodesep=4pt,linecolor=blue]{11,2}{13,3}}
+\only<2->{\ncangle[angleA=90,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{9,4}{8,5}}
+\only<2->{\ncangle[angleA=270,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{9,4}{10,5}}
+\only<2->{\ncangle[angleA=90,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{13,4}{12,5}}
+\only<2->{\ncangle[angleA=270,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{13,4}{14,5}}
+
+\psset{arrows=-}
+\ncangle[angleA=180,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{4,1}{11,1}
+\only<2->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{9,3}{9,4}}
+\only<5->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{4,1}{4,2}}
+\only<2->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{11,1}{11,2}}
+\only<2->{\ncangle[angleA=0,angleB=180,ncurv=1,linewidth=.5pt,nodesep=4pt]{13,3}{13,4}}
+\end{psmatrix}
+
+%\only<3->{\rput(8.0,3.9){\fontsize{7}{7}\selectfont \sffamily Expectation over $\pi$}}
+\only<2->{\rput(7.8,4.3){\fontsize{7}{7}\selectfont \sffamily \textbf{Utilities}}}
+\only<2->{\rput(8.0,3.7){\fontsize{7}{7}\selectfont \sffamily 3866}}
+\only<2->{\rput(8.0,2.8){\fontsize{7}{7}\selectfont \sffamily 4643}}
+\only<2->{\rput(8.0,1.9){\fontsize{7}{7}\selectfont \sffamily 4275}}
+\only<2->{\rput(8.0,0.9){\fontsize{7}{7}\selectfont \sffamily 4429}}
+\only<3->{\rput(9.2,3.2){\fontsize{7}{7}\selectfont \sffamily 4250}}
+\only<3->{\rput(9.2,1.4){\fontsize{7}{7}\selectfont \sffamily 4352}}
+\only<3->{\rput(9.2,4.28){\parbox[l]{1.5cm}{\begin{center}\fontsize{7}{7}\selectfont \sffamily \textbf{Expectation over $\pi$}\end{center}}}}
+\only<3->{\rput(8.5,1.4){\fontsize{75}{75}\selectfont \sffamily \}}}
+\only<3->{\rput(8.5,3.2){\fontsize{75}{75}\selectfont \sffamily \}}}
+\only<4->{\rput(10.7,4.25){\parbox[l]{1.2cm}{\begin{center}\fontsize{7}{7}\selectfont \sffamily \blue \textbf{Maximise utility}\end{center}}}}
+\only<4->{\rput(10.5,2.3){\fontsize{7}{7}\selectfont \sffamily \blue New drug: 4352}}
+\only<5->{\rput(7.8,7.9){\fontsize{7}{7}\selectfont \sffamily \textbf{Utilities}}}
+\only<5->{\rput(8.0,7.45){\fontsize{7}{7}\selectfont \sffamily 3866}}
+\only<5->{\rput(8.0,6.55){\fontsize{7}{7}\selectfont \sffamily 4275}}
+\only<5->{\rput(8.0,5.7){\fontsize{7}{7}\selectfont \sffamily 4634}}
+\only<5->{\rput(8.0,4.83){\fontsize{7}{7}\selectfont \sffamily 4429}}
+\only<6->{\rput(9.2,7.88){\parbox[l]{1.2cm}{\begin{center}\fontsize{7}{7}\selectfont \sffamily \blue \textbf{Maximise utility}\end{center}}}}
+\only<6->{\rput(9.2,7.0){\fontsize{7}{7}\selectfont \sffamily New drug: 4275}}
+\only<6->{\rput(9.2,5.3){\fontsize{7}{7}\selectfont \sffamily Standard: 4634}}
+\only<7->{\rput(10.7,7.9){\parbox[l]{1.5cm}{\begin{center}\fontsize{7}{7}\selectfont \sffamily \textbf{Expectation over $\pi$}\end{center}}}}
+\only<7->{\rput(10.7,6.2){\fontsize{7}{7}\selectfont \sffamily 4566}}
+\only<8->{\rput(2.0,8.2){\fontsize{7}{7}\selectfont \sffamily EVPI = \pounds\ 4566 -- \pounds\ 4353 = \pounds\ 212 per patient}}
+}
+
+
+\end{document}

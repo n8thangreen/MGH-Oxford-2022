@@ -1,0 +1,752 @@
+
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{``Push through'' uncertainty}
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=4.5cm]{6.probabilistic-sensitivity-analysis/figs/forward_backward.png}}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Summary}
+
+\bi
+
+\item One step parameter estimation and cost-effectiveness model
+\bi
+\item Set up a deterministic health economic model
+\item Estimate parameters and ``Push through'' the uncertainty in the parameters underpinning this model by Monte Carlo simulation
+\ei
+
+\item  This generates the distribution of the population mean effectiveness and population mean cost in each arm
+\bi
+\item $\mathbb{E}[f(\theta)] \neq f\left( \mathbb{E}[\theta] \right) $
+\ei
+
+\item We use these distributions to find
+\bi
+\item Incremental cost-effectiveness ratio
+\item Incremental net benefit
+\item Cost effectiveness acceptability curves
+\ei
+
+\item We calculate the value of reducing the uncertainty in the parameters
+\bi
+\item Expected value of perfect information
+\item Expected value of perfect partial information
+\ei
+\ei
+
+%{\footnotesize \emph{Bayesian Methods in Health Economics} chapter 3.4 -- 3.5}
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{New chemotherapy drug}
+
+\bi
+\item Evaluate a new chemotherapy drug against the standard of care
+
+\item Following treatment, a patient may experience haematological side effects
+
+\item If this does happen, depending on the severity, the patient either needs ambulatory care, or is admitted to hospital
+
+\item Costs to include: Drug costs, cost of ambulatory care, cost of hospital
+
+\item Effect: Being free of side effects
+\ei
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Components of Decision Quality\footnote{\fontsize{7}{8}\selectfont Ron Howard. The Foundations of Decision Analysis Revisited, in Advances in Decision Analysis 2007.}}
+
+{\footnotesize
+
+\bi
+\item What we can do?
+\bi
+\item $t$ is the set of interventions
+\item Decide to use standard-or-care or new treatment ($t = 1, 2$)
+\ei
+
+\item What we know?
+\bi
+\item Statistically these are the \alert{random variables}
+\item $\mathbf{\theta}$: parameters describing  disease model, costs and effects
+\item $e$ and $c$ are the observable outcomes
+\item $\mu_t^e = \mathbb{E}[e\mid\theta, t]$ and $\mu_t^c= \mathbb{E}[c\mid\theta, t]$ are population mean cost and effect given intervention $t$.
+\ei
+
+\item What we want?
+\bi
+\item The value of the outcomes \alert{measured by utility}
+\item We chose the \alert{net (monetary) benefit}\\
+$u(e,c;t) = ke-c$\\
+$k$ is the willingness-to-pay for one unit of effectivness.
+\item Chose intervention $t$ with the highest expected net benefit\\
+$\mathbb{E}\left[ \mathbb{E}[u(e,c;t)] \right] = \mathbb{E}\left[k\mu_t^e-\mu_t^c \right]$\\
+\ei
+\ei
+
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Decision tree model}
+
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/chemo_decision_tree.png}}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Disease model data}
+
+We have data from a clinical study
+
+
+\begin{center}
+\small
+\begin{tabular}{lrl}
+\hline
+Parameter  & Value & Description\\
+\hline
+$N^{pat}$ & 111 & Number of patients in observed data \\
+$N^{se}$  & 27  & Number of patients with side effects,  \\ &&given standard-of-care \\
+$N^{amb}$ & 17  & Number of patient with ambulatory care following \\ &&side effect, given standard-or-care \\
+$\mu_{\rho}$ & 0.8  & Mean relative probability of side effects \\ &&in new treatment compared to standard-of-care \\
+$\sigma_{\rho}$ & 0.2  & SE of relative probability of side effects \\ &&in new treatment compared to standard-of-care \\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{Disease model analysis}
+
+{\small
+Probability of side effects
+
+\begin{tabular}{ccll}
+$N^{\rm{se}}$ & $\sim$ & ${\rm Binomial}(\pi_1, N^{\rm{pat}})$         & sampling distribution \\
+$\pi_1$           & $\sim$ & ${\rm Beta}(1, 1)$                                & prior distribution \\
+$\rho$            & $\sim$ & ${\rm Normal}(\mu_{\rho}, \sigma_{\rho}^2)$ & Reduction in the occurence of side effects \\
+$\pi_2$           & $=$    & $\rho \pi_1$                                      &  \\
+\end{tabular}
+
+Treatment of side effects
+
+\begin{tabular}{ccll}
+$N^{\rm{amb}}$ & $\sim$  & ${\rm Binomial}(\gamma, N^{\rm{se}})$  & sampling distribution \\
+$\mathtt{\gamma}$  &  $\sim$ & ${\rm Beta}(1, 1)$                         & prior distribution \\
+\end{tabular}
+
+\begin{verbatim}
+num.se ~ dbin(pi[1], num.pat)
+pi[1] ~ dbeta(1, 1)
+
+rho ~ dnorm(m.rho, tau.rho)
+pi[2] <- rho * pi[1]
+
+num.amb ~ dbin(gamma, num.se)
+gamma ~ dbeta(1, 1)
+
+\end{verbatim}
+}
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{Cost Data}
+
+{\footnotesize
+\begin{center}
+\begin{tabular}{lrll}
+\hline
+Parameter  & Distribution & Description & Mean cost\\
+  \hline\\[-6pt]
+  $c^{\rm{amb}}$ & logNormal(4.77, 0.17) & Ambulatory care & 120 \\
+  $c^{\rm{hosp}}$ &  logNormal(8.60, 0.18) & Hospital & 5483 \\
+  $c_1^{\rm{drug}}$ & 110  & Cost of standard-of-care \\
+  $c_2^{\rm{drug}}$ & 520 & Cost of new drug \\
+  \hline
+\end{tabular}
+\end{center}
+}
+
+{\small
+\begin{verbatim}
+c.amb ~ dlnorm(m.amb, tau.amb)     # Cost of ambulatory care
+c.hosp ~ dlnorm(m.hosp, tau.hosp)  # Cost of hospitalization
+
+# The drug costs are part of the data set
+list(c.drug = c(110, 520))
+\end{verbatim}
+}
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+\frametitle{The predictive distributions and total costs and effects}
+
+{\footnotesize
+\begin{tabular}{ccll}
+$N$     & $=$ & \multicolumn{2}{l}{Number of patients in the population to model} \\
+$SE_t$  & $\sim$ & ${\rm Binomial}(\pi_t, N)$            & Expected \#  with side effects \\
+$A_t$   & $\sim$ & ${\rm Binomial}(\lambda, SE_t)$          & Expected \#  with with ambulatory care\\
+$H_t$   & $=$ & $SE_t - A_t$                           & Expected \# with with hospitalization \\
+$\mu_t^e$  & $=$ & $ N^{\rm{pat}} - SE_t$                   & Expected \# with no side effects \\
+$\mu_t^c$  & $=$ & $ c_t^{\rm{drug}} N^{\rm{pat}} + c^{\rm{amb}} A_t +c^{\rm{hosp}} H_t$ & Expected cost \\
+\end{tabular}
+}
+
+{\small
+\begin{verbatim}
+for (t in 1:2){
+    SE[t] ~ dbin(pi[t], N)
+    A[t] ~ dbin(gamma, SE[t])
+    H[t] <- SE[t] - A[t]
+    mu.e[t] <- N - SE[t]
+    mu.c[t] <- c.drug[t] * N + c.amb * A[t] + c.hosp * H[t]
+}
+\end{verbatim}
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Cost-effectiveness plane}
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=6cm]{6.probabilistic-sensitivity-analysis/figs/chemo_ceplane.pdf}}
+\end{center}
+
+k is the amount one is willing to pay for one unit of effectiveness
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Incremental Cost Effectiveness Ratio (ICER)}
+
+The ICER is the mean incremental cost divided by the mean incremental effect
+
+\begin{tabular}{ccll}
+$\Delta_e$ &$=$& $\mu_2^e - \mu_1^e$ & Expected incremental effects\\
+$\Delta_c$ &$=$& $\mu_2^c - \mu_1^c$ & Expected incremental costs
+\end{tabular}
+
+\[
+\mathrm{ICER} = \frac{\mathbb{E}[\Delta_c]}{\mathbb{E}[\Delta_e]}
+\]
+
+WARNING!
+
+\bi
+\item The ICER cannot be interpreted without knowing the position of
+  $\Delta_e$ and $\Delta_c$ on the CE plane
+\item The ICER is not a properly ordered statistic for negative values
+  (e.g. -100/100 is better than -100/50 is better than -50/50 in terms
+  of decision making, but these ratios are -1, -2, -1)
+\ei
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Incremental Net (Monetary) Benefit}
+
+\begin{itemize}
+\item Translate effects onto the cost scale and subtract costs
+
+\item INB($\theta, k$) = $	k\Delta_{e} - \Delta_{c}$
+
+\item $k$ is the amount one is willing to pay for one unit of effectiveness
+
+\item If INB($\theta$, k)$>$0 then the new treatment is cost effective
+
+\item We can plot the expected INB and its 95\% CI for different values of $k$
+
+\item The break-even point occurs at $\mathbb{E}[\Delta_{c}]/\mathbb{E}[\Delta_{e}]$. (Although it is possible the INB is always positive or negative)
+
+\end{itemize}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Incremental Net (Monetary) Benefit}
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=7cm]{6.probabilistic-sensitivity-analysis/figs/chemo_INB.pdf}}
+\end{center}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Cost Effectiveness Acceptability Curve}
+
+\bi
+\item To quantify decision uncertainty consider the probability that INB(K) is positive
+
+\item $Q(k) = \Pr(INB(k)>0)=\Pr(k\Delta_{e}-\Delta_{c}>0)$
+
+\item This is the cost-effectiveness acceptability curve (CEAC)
+
+\item Imagine a line on the cost-effectiveness plane going through the origin
+and with gradient $k$. The value of $Q(k)$ is the area under the line.
+
+\item (Actually $Q(k)$ is the volume to one side of a plane bisecting the
+probability density function of costs and effects)
+\ei
+
+\end{frame}
+
+%% %### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Cost Effectiveness Acceptability Curve}
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=7cm]{6.probabilistic-sensitivity-analysis/figs/chemo_CEAC.pdf}}
+\end{center}
+
+
+\end{frame}
+
+%% %### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{Coding this in \bugs}
+
+\begin{verbatim}
+## incremental cost/effectiveness ratio
+delta.e <- mu.e[2] - mu.e[1]
+delta.c <- mu.c[2] - mu.c[1]
+
+##  CEAC curves
+k.space <- 5000
+for(j in 1:11){
+    k[j]<- (j-1) * k.space
+    INB[j] <- K[j] * delta.e - delta.c
+    Q[j] <- step( INB[j] )
+}
+\end{verbatim}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Value of perfect information (VPI)}
+
+\bi
+\item Consider a simpler model where:
+    \bi
+    \item The only uncertain parameter is the probability of side effects $\pi$ given SoC
+    \item We have a discrete distribution for this
+
+\begin{tabular}{ccll}
+$P(\pi = 0.25) $ &$=$& $0.5$ & \\
+$P(\pi = 0.35) $ &$=$& $0.5$ &
+\end{tabular}
+
+    \item All patients with a side effect are treated the same way, and this costs 2000
+    \ei
+
+\item The new treatment has the highest expected net benefit (when WTP = 5000)
+    \bi
+    \item  $\max_t \mathbb{E}[NB(\pi; t)]  = 2800$
+    \ei
+
+\item Suppose that we know that $\pi = 0.25$
+\item Now the SoC has the highest net benefit
+    \bi
+    \item $\max_t NB(\pi, t) = 3140$
+    \ei
+\item The value of knowing $\pi$ exactly is the difference between these
+\ei
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Value of perfect information (VPI)}
+
+\begin{center}
+\begin{overpic}[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg1.png}
+\only<2->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg2.png}}}
+\only<3->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg3.png}}}
+\only<4->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg4.png}}}
+\only<5->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg5.png}}}
+\only<6->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/VPIeg6.png}}}
+\end{overpic}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Expected value of perfect information (EVPI)}
+{\small
+\bi
+\item Perfect information is a hypothetical concept as we don't know the parameter value when deciding to buy it.
+\item Instead we find the expected NB, averaging over the possible values of $\pi$
+    \bi
+    \item $\mathbb{E}_{\pi}[\max_t NB(\pi, t)]$
+    \ei
+\item The \alert{expected} value of knowing this infomation is $\mathbb{E}_{\pi}[\max_t NB(\pi; t)] -  \max_t \mathbb{E}_{\pi}(NB(\pi; t)]$
+\item This is called the Expected Value of Perfect Information (EVPI)
+\item Note that, if for every value of $\pi$ we don't change the treatment decision, then the EVPI is zero
+\ei
+
+\begin{block}{Golden rule of Value of Information}
+Information only has value if it changes your decision
+\end{block}
+
+}
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Expected value of perfect information (EVPI)}
+
+\begin{center}
+\begin{overpic}[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg1.png}
+\only<2->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg2.png}}}
+\only<3->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg3.png}}}
+\only<4->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg4.png}}}
+\only<5->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg5.png}}}
+\only<6->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg6.png}}}
+\only<7->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPIeg7.png}}}
+\end{overpic}
+\end{center}
+
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Expected value of perfect information (EVPI)}
+
+\begin{center}
+\begin{overpic}[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPI1.png}
+\only<2->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPI2.png}}}
+\only<3->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPI3.png}}}
+\only<4->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPI4.png}}}
+\only<5->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPI5.png}}}
+\end{overpic}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{How to estimate EVPI by simulation}
+
+{\small
+%\begin{columns}
+%\column{0.47\paperwidth}
+Decide to \alert{not} buy information\\
+1) Simulate a set of parameters $\mathbf{\theta} = \theta_1 ,\ldots, \theta_I$\\
+
+2) For each treatment $t_k = t_1, \ldots , t_K$\\
+\hspace{1em} a) Find utility of treatment $t_k$ for each $\theta_i$. $u(\theta_i, t_k)$\\
+\hspace{1em} b) Estimate $\mathbb{E}_{\theta}\left[u(\theta, t_k)  \right]$ by the mean over $i$ of  $u(\theta_i, t_k)$\\
+
+3) The value of the decision is $\max_t\mathbb{E}_{\theta}\left[u(\theta, t)  \right]$\\
+
+
+\vspace{1em}
+Decision to buy information\\
+1) Simulate a set of parameters $\mathbf{\theta} = \theta_1 ,\ldots, \theta_I$\\
+
+2) For each parameter $\theta_i$\\
+\hspace{1em} a) Find utility of  $\theta_i$ for each treatment $t_k = t_1, \ldots , t_K$. $u(\theta_i, t_k)$\\
+\hspace{1em} b) Choose treatment $t^*$ that is $\max_t u(\theta_i, t_k)$\\
+
+3) Value of decision is $\mathbb{E}_{\theta}\left[\max_t u(\theta, t)  \right]$ which is estimated by the mean over $i$ of $\max_t u(\theta_i, t^*)$\\
+
+\vspace{1em}
+\[
+\mbox{EVPI} = \mathbb{E}_{\theta}\left[\max_t u(\theta; t)  \right] - \max_t\mathbb{E}_{\theta}\left[u(\theta; t)  \right]
+\]
+
+%\column{0.47\paperwidth}
+%\end{columns}
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Expected value of perfect partial information (EVPPI)}
+
+\bi
+\item Generally we don't want to know the value of knowing all the parameters exactly, but the value of knowing \alert{each} parameter (or a group of parameters), exactly.
+\item Partition the parameters into two groups
+    \bi
+    \item $\theta = (\phi, \psi)$
+    \ei
+\item We want to know the value of knowing $\phi$ perfectly, whilst remaining uncertain about $\psi$
+\ei
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Expected value of perfect partial information (EVPPI)}
+
+\begin{center}
+\begin{overpic}[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI1.png}
+\only<2->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI2.png}}}
+\only<3->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI3.png}}}
+\only<4->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI4.png}}}
+\only<5->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI5.png}}}
+\only<6->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI6.png}}}
+\only<7->{\put(0,0){\includegraphics[height=6.5cm]{6.probabilistic-sensitivity-analysis/figs/EVPPI7.png}}}
+\end{overpic}
+\end{center}
+
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{How to estimate EVPPI by simulation}
+
+{\small
+$\theta$ is partitioned into $(\phi, \psi)$\\
+Decision to buy information on $\phi$\\
+1) Simulate a set of parameters $\mathbf{\phi} = \phi_1 ,\ldots, \phi_I$\\
+
+2) For each parameter $\phi_i$\\
+
+    \hspace{1em} a) Simulate a set of parameters $\mathbf{\psi} = \psi_1 ,\ldots, \psi_J$\\
+
+    \hspace{1em} b) For each treatment $t_k = t_1, \ldots , t_K$\\
+
+        \hspace{2em} i) Find utility of treatment $t_k$ for each $\psi_j$. $u(\phi_i, \psi_j, t_k)$\\
+        \hspace{2em} ii) Estimate $\mathbb{E}_{\psi}\left[u(\phi_i, \psi, t_k)  \right]$ by the mean over $j$ of $u(\phi_i, \psi_j, t_k)$\\
+
+    \hspace{1em} c) Choose treatment $t^*$ that is $max_t \mathbb{E}_{\psi}\left[u(\phi_i, \psi, t_k)  \right]$
+
+3) Value of decision is $\mathbb{E}_{\phi}\left[\max_t \mathbb{E}_{\psi}\left[u(\phi, \psi, t)  \right] \right]$ which is estimated by the mean over $i$ of $\mathbb{E}_{\psi}\left[u(\phi_i, \psi, t^*)  \right]$\\
+
+\vspace{1em}
+\[
+\mbox{EVPPI} = \mathbb{E}_{\phi}\left[\max_t \mathbb{E}_{\psi}\left[u(\phi, \psi; t)  \right] \right] - \max_t\mathbb{E}_{\theta}\left[u(\theta; t)  \right]
+\]
+
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{How to estimate EVPPI by simulation}
+
+{\footnotesize
+\bi
+\item This algorithm is extremely computationally intensive
+\item For every simulated value of $\phi$, we have to simulate a set of $\psi$'s
+\item And then repeat this for every parameter, and every WTP threshold
+\item This means this algorithm is practically infeasible, so approximations have been developed\footnote{\fontsize{7}{8}\selectfont Strong et al. (2013,2014). Sadatsafavi et al. (2013), Heath \& Baio (2015)}
+\item These algorithms only need a single set of parameter values, and the corresponding utility values for each treatment
+\item This is exactly what we get when simulating the expected NB for each treatment in \bugs
+\ei
+
+\begin{center}
+\begin{tabular}{rrrrrrrr}
+  \hline
+ Simulation & $\pi_1$ & $\rho$ & $\gamma$ & $c^{\rm{amb}}$ & $c^{\rm{hosp}}$ & $NB_1$ & $NB_2$ \\
+  \hline
+1 & 0.15 & 0.73 & 0.62 & 106 & 5 410 & 3 654 900 & 4 049 100 \\
+  2 & 0.23 & 0.78 & 0.57 & 146 & 4 705 & 3 259 200 & 3 134 300 \\
+  3 & 0.28 & 0.72 & 0.65 & 113 & 5 858 & 3 095 200 & 3 041 100 \\
+  4 & 0.27 & 0.74 & 0.62 & 99 & 6 448 & 2 588 300 & 2 755 000 \\
+  5 & 0.24 & 0.89 & 0.44 & 107 & 5 225 & 2 968 300 & 2 778 000 \\
+   \hline
+\end{tabular}
+\end{center}
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{Estimating EVPPI by regression (recommended method)}
+
+\[
+\mbox{EVPPI} = \mathbb{E}_{\phi}\left[\max_t \mathbb{E}_{\psi}\left[NB(\phi, \psi; t)  \right] \right] - \max_t\mathbb{E}_{\theta}\left[NB(\theta; t)  \right]
+\]
+
+General principle {\footnotesize (Strong et al., Medical Decision Making 2014)}
+
+\begin{itemize}
+
+\item For each treatment $t$, fit a regression model of $NB_t$ on parameter(s) of interest $\phi$ using these simulations
+
+\item Take the \alert{mean over simulations} of \alert{maximum over $t$} of \emph{fitted values} $E(NB_t | \phi)$ from these regressions
+
+\item This is an estimate of $\mathbb{E}_{\phi}\left[\max_t \mathbb{E}_{\psi}\left[NB(\phi, \psi; t)  \right] \right]$
+
+\end{itemize}
+\pause
+Implemented in
+\begin{itemize}
+\item SAVI web application \url{http://savi.shef.ac.uk/SAVI} {\footnotesize (Strong et al.)}
+\item BCEA R package {\footnotesize (Heath \& Baio 2015)} 
+\end{itemize}
+
+via various non-parametric, non-linear regression methods: ongoing work to find the most reliable$\ldots$
+
+\end{frame}
+
+
+%### New page ############################################################
+
+\begin{frame}[fragile]
+
+\frametitle{EVPPI plot}
+
+\begin{center}
+\rotatebox{0}{\includegraphics[height=4.5cm]{6.probabilistic-sensitivity-analysis/figs/chemo_EVPPI.pdf}}
+\end{center}
+
+{\footnotesize
+\bi
+\item The greatest value in reducing parameter uncertainty are from the parameters
+    \bi
+    \item $\rho$ Probability of side effect given new treatment compared to SoC
+    \item $\pi_1$ Probability of side effect given SoC
+    \ei
+\item There is relatively little value in reducing the uncertainty in the other parameters
+\ei
+}
+
+\end{frame}
+
+%### New page ############################################################
+
+\begin{frame}
+
+\frametitle{Conclusions}
+
+\bi
+\item Using \bugs for PSA
+    \bi
+    \item Set up a deterministic model
+    \item ``Push through'' the uncertainty in the parameters to uncertainty in the model outputs
+    \ei
+\item Define ICER, INB, CEAC
+\item How to find these in \bugs
+\item Define and calculate EVPI and EVPPI
+\ei
+
+\end{frame}
+
+\begin{frame}
+
+  \frametitle{Practical: Probabilistic sensitivity analysis in BUGS}
+
+  \textbf{There are three questions in this practical which can be done in any order}
+
+  \begin{itemize}
+
+  \item Question 1) is about running the chemotherapy model in BUGS. This is the easiest question. Do this if you want more practice in using BUGS.
+
+  \item Question 2) is about understanding value of information, and does not use BUGS.
+
+  \item Question 3) is about interfacing BUGS with R using the package \texttt{R2OpenBUGS}, and drawing figures and performing EVPPI calculations using the package \texttt{BCEA}.
+
+  \end{itemize}
+
+\end{frame}
+
+
+%### New page ############################################################
+
+%\begin{frame}[fragile]
+%\frametitle{}
+%\end{frame}
+

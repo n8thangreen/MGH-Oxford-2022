@@ -1,0 +1,1079 @@
+\frame{%
+\frametitle{Summary}
+\begin{itemize}
+\item Health economic evaluation
+\begin{itemize}
+\item What is health economics?
+\item Why do we need health economics?
+\item Cost and outcome data
+\end{itemize}
+\pause
+\item A framework for health economic evaluation
+\begin{itemize}
+\item Statistical modelling
+\item Economic modelling
+\item Decision analysis
+\item Uncertainty analysis
+\end{itemize}
+\end{itemize}
+
+\vfill
+{\footnotesize  \emph{Bayesian Methods in Health Economics} (BMHE), chapter 1}
+
+}
+
+%%%%\frame{%
+%%%%\frametitle{What is health economics?}%
+%%%%\begin{center}
+%%%%\vspace{-.35cm}
+%%%%\only<1|handout:0>{\includegraphics[width=11.5cm]{1.introduction-to-health-economic-evaluations/figs/Intro1}}
+%%%%\only<2|handout:1>{\includegraphics[width=11.5cm]{1.introduction-to-health-economic-evaluations/figs/Intro2}}
+%%%%\only<3|handout:2>{\includegraphics[width=11.5cm]{1.introduction-to-health-economic-evaluations/figs/Intro3}}
+%%%%\end{center}
+%%%%}
+%%%%
+%%%%\frame{ 
+%%%%\frametitle{Why do we need health economic evaluations?} %
+%%%%\begin{itemize}
+%%%%\item Increasing demand for health care generated increase in the number of available interventions
+%%%%\item These have sometimes been applied regardless on considerations about the actual quality and the costs associated
+%%%%\item Consequently, decision-makers are increasingly facing critical appraisal processes of how the available resources are managed
+%%%%\vspace{10pt} \pause
+%%%%\item \textbf{\red Objective}: \alert{Maximise health gains, given finite monetary resources \& limited budgets}
+%%%%\begin{itemize}
+%%%%\item Increasing proportion of the ``older'' (above 65 years) population
+%%%%\item Increase of life expectancy and of the incidence of chronic and degenerative pathologies
+%%%%\item Refinement of diagnostic techniques
+%%%%\item Availability of innovative technologies and therapeutic tools (\alert{better outcomes but higher costs})
+%%%%\end{itemize}
+%%%%\end{itemize}
+%%%%}
+
+\frame{%
+\frametitle{What does health economics do?}%
+\begin{itemize}
+\item \textbf{Objective}: Combine \alert{costs} \& \alert{benefits} of a given intervention into a rational scheme for allocating resources
+\begin{itemize}
+\item Recently, models have been built upon more advanced statistical foundations
+\item This problem can be formalised within a statistical decision-theoretic approach. Rational decision-making is effected through the comparison of expected utilities
+\end{itemize}
+\pause\vspace{10pt}
+\item Increasingly under a Bayesian framework, especially in the UK: \fontsize{9}{10}\selectfont\alert{5.9.10--12 Dealing with parameter uncertainty in cost-effectiveness analysis (NICE Methods for Technology Assessment)}
+\begin{itemize}
+\fontsize{9}{10}\selectfont
+\item \emph{All inputs used in the analysis will be estimated with a degree of imprecision.}
+\item \emph{Probabilistic sensitivity analysis is preferred for translating the imprecision in all input variables into a measure of decision uncertainty in the cost-effectiveness of the options being compared.}
+\item \emph{Appropriate ways of presenting uncertainty include confidence ellipses and scatter plots on the cost-effectiveness plane (when the comparison is restricted to two alternatives) and cost-effectiveness acceptability curves.}
+\end{itemize}
+%%\begin{itemize}
+%%\item David Spiegelhalter (2006). \textit{Bayesian methods, health technology assessment, and performance monitoring}. Report on progress 2001-2006 for MRC Unit's Quinquennial Review
+%%\item Contributions by several scholars and research groups
+%%\begin{itemize}
+%%\item[$\circ$] Tony O'Hagan (University of Sheffield --- Centre for Bayesian Statistics in Health Economics)
+%%\item[$\circ$] Karl Claxton, Mike Sculpher (University of York)
+%%\item[$\circ$] Giovanni Parmigiani (then at John Hopkins University)
+%%\item[$\circ$] Gordon Hazen (Northwestern University)
+%%\item[$\circ$] $\ldots$
+%%\end{itemize}
+%%\end{itemize}
+\end{itemize}
+}
+
+%%%\frame{
+%%%\frametitle{Multivariate outcome}
+%%%\begin{itemize}
+%%%\item One of the most important characteristic of health economic data is that we need to deal with \textbf{\red multivariate outcomes}
+%%%\begin{itemize}
+%%%\item $e$ = suitable measure of clinical benefit of an intervention
+%%%\item $c$ = suitable costs associated with an intervention 
+%%%\end{itemize}
+%%%\vspace{10pt}
+%%%\item We typically need to assess these quantities \alert{jointly}
+%%%\item The economic evaluation is based on both!
+%%%\end{itemize}
+%%%}
+
+\frame{
+\frametitle{Health economic outcome}
+\begin{itemize}
+\item One of the most important characteristic of health economic data is that we have \textbf{\myblue multivariate outcomes}
+\begin{itemize}
+\item $\myblue e$ = suitable measure of clinical benefit of an intervention
+\item $\myblue c$ = suitable costs associated with an intervention 
+\end{itemize}
+\vspace{5pt}\pause
+\item We typically need to assess these quantities \textbf{jointly}
+\begin{itemize}
+\item Costs and benefit will tend to be correlated
+\begin{itemize}
+\item Strong positive correlation --- effective treatments are innovative and result from intensive and lengthy research $\Rightarrow$ are associated with higher unit costs
+\item Negative correlation --- more effective treatments may reduce total care pathway costs e.g.\ by reducing hospitalisations, side effects, etc.
+\end{itemize}
+\item In any case, the economic evaluation is based on both!
+\end{itemize}
+\vspace{5pt}\pause
+\item There are different ways in which we can define $\myblue (e,c)$ for a specific problem
+\begin{itemize}
+\item Direct vs indirect vs intangible costs
+\item ``Hard-'' vs utility-based clinical outcomes 
+\item Public (\eg NHS) vs private (\eg insurance) perspective
+\end{itemize}
+\end{itemize}
+}
+
+\frame{
+\frametitle{Cost distributions}
+\vspace{-6pt}
+\begin{itemize}
+\item Cost variables usually have the following characteristics
+\begin{itemize}
+\item Can vary widely between patients
+\item Are bounded by 0 and potentially have no upper limit 
+\item Sometimes, ``structural'' 0 are observed (ie patients that induce no costs)
+\item Simple statistical models fail to provide a reasonable fit to the observed data (\textbf{more on this later!})
+%%%\item Hence tend to be positively skewed 
+\end{itemize} 
+\end{itemize}
+\vspace{-6pt}
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[scale=.35]{1.introduction-to-health-economic-evaluations/figs/costCtrl} & 
+\includegraphics[scale=.35]{1.introduction-to-health-economic-evaluations/figs/costTrts}
+\end{tabular}
+\end{center}
+}
+
+%%%%\frame{
+%%%%\frametitle{Clinical outcomes}
+%%%%\begin{itemize}
+%%%%\item For some specific analysis, we can use ``hard'' clinical measures of outcome
+%%%%\begin{itemize}
+%%%%\item Cases of tuberculosis (TB) prevented for a TB screening programme
+%%%%\item Days of normal functioning gained for patients with schizophrenia that have received cognitive behavioural therapy
+%%%%\item Life years saved as part of a colorectal cancer screening programme
+%%%%\item Number of deaths averted by a surgical procedure
+%%%%\end{itemize}
+%%%%\item However, unless the same outcome is used (eg life years saved), it is difficult to compare interventions across disease areas 
+%%%%\end{itemize}
+%%%%\vspace{10pt}\pause
+%%%%
+%%%%\begin{itemize}
+%%%%\item For this reason, we often use suitable generic instruments for measuring health outcomes
+%%%%\begin{itemize}
+%%%%\item Because they have a standardised description of health, they allow for a comparison of outcomes across different disease areas
+%%%%\end{itemize}
+%%%%\item Examples of general health profile instruments include
+%%%%\begin{itemize}
+%%%%\item The \textit{Short Form 36} (SF-36)
+%%%%\item The \textit{Nottingham Health Profile}
+%%%%\end{itemize}
+%%%%\end{itemize}
+%%%%}
+%%%%
+%%%%\frame{
+%%%%\frametitle{Generic instruments --- Euroqol 5D}
+%%%%\begin{tabular}{cc}
+%%%%\hspace{-.8cm}
+%%%%\begin{minipage}[l]{6.0cm}
+%%%%\vspace{1pt}
+%%%%{\fontsize{5}{6}\selectfont\sffamily
+%%%%\begin{tabular}{lc}
+%%%%\multicolumn{2}{l}{Under each heading, please tick ONE box that best describes your health TODAY} \\[5pt]
+%%%%\textbf{MOBILITY}\\
+%%%%I have no problems in walking about & $\Box$ \\ 
+%%%%I have slight problems in walking about & $\Box$ \\
+%%%%I have moderate problems in walking about & $\Box$ \\
+%%%%I have severe problems in walking about & $\Box$ \\
+%%%%I am unable to walk about & $\Box$ \\[10pt]
+%%%%\textbf{SELF-CARE}\\
+%%%%I have no problems washing or dressing myself & $\Box$ \\
+%%%%I have slight problems washing or dressing myself & $\Box$ \\
+%%%%I have moderate problems washing or dressing myself & $\Box$ \\
+%%%%I have severe problems washing or dressing myself & $\Box$ \\
+%%%%I am unable to wash or dress myself & $\Box$ \\[10pt]
+%%%%\multicolumn{2}{l}{\textbf{USUAL ACTIVITIES} (e.g. work, study, housework, family or leisure activities)} \\
+%%%%I have no problems doing my usual activities & $\Box$ \\
+%%%%I have slight problems doing my usual activities & $\Box$ \\
+%%%%I have moderate problems doing my usual activities & $\Box$ \\
+%%%%I have severe problems doing my usual activities & $\Box$ \\
+%%%%I am unable to do my usual activities & $\Box$ \\[10pt]
+%%%%\textbf{PAIN / DISCOMFORT} \\
+%%%%I have no pain or discomfort & $\Box$ \\
+%%%%I have slight pain or discomfort & $\Box$ \\
+%%%%I have moderate pain or discomfort & $\Box$ \\
+%%%%I have severe pain or discomfort & $\Box$ \\
+%%%%I have extreme pain or discomfort & $\Box$ \\[10pt]
+%%%%\textbf{ANXIETY / DEPRESSION}\\
+%%%%I am not anxious or depressed & $\Box$ \\
+%%%%I am slightly anxious or depressed & $\Box$ \\
+%%%%I am moderately anxious or depressed & $\Box$ \\
+%%%%I am severely anxious or depressed & $\Box$ \\
+%%%%I am extremely anxious or depressed & $\Box$ \\
+%%%%\end{tabular}}
+%%%%\end{minipage} & 
+%%%%\begin{minipage}[l]{6cm}
+%%%%\fontsize{8}{9}\selectfont
+%%%%\begin{itemize}
+%%%%\item The EQ-5D is a short questionnaire primarily designed for self-completion by respondents
+%%%%\item Each dimension has 5 levels 
+%%%%\begin{itemize}
+%%%%\fontsize{8}{9}\selectfont
+%%%%\item ``No problems'' 
+%%%%\item ``Slight problems'' 
+%%%%\item ``Moderate problems''
+%%%%\item ``Severe problems'' 
+%%%%\item ``extreme problems''
+%%%%\end{itemize}
+%%%%\item Respondents are asked to indicate their health state by ticking in the box against the most appropriate statement
+%%%%\item Each health state in generic instruments such as the EQ-5D and the SF-6D can be converted into a utility score, where a utility score $u=1$ represents perfect health and a value of $u=0$ represents death
+%%%%\end{itemize}
+%%%%\end{minipage}
+%%%%\end{tabular}
+%%%%}
+%%%%
+%%%%\frame{
+%%%%\frametitle{Generic instruments --- SF-6D}
+%%%%\vspace{5pt}
+%%%%\hspace{-.4cm}
+%%%%\begin{minipage}[l]{10.0cm}
+%%%%{\fontsize{5}{5}\selectfont\sffamily
+%%%%\begin{tabular}{p{.35cm}ccccc}
+%%%%\multicolumn{6}{l}{\textbf{RAND 36-Item Health Survey 1.0 Questionnaire Items (Excerpt)}} \\
+%%%%\multicolumn{6}{l}{ } \\
+%%%%\multicolumn{6}{p{11cm}}{\textbf{1.} In general, would you say your health is:} \\[1pt]
+%%%%& 
+%%%%\multicolumn{1}{p{2cm}}{\centering Excellent} &
+%%%%\multicolumn{1}{p{1.8cm}}{\centering Very good} &
+%%%%\multicolumn{1}{p{1cm}}{\centering Good} &
+%%%%\multicolumn{1}{p{1cm}}{\centering Fair} &
+%%%%\multicolumn{1}{p{1cm}}{\centering Poor} \\[3pt]         
+%%%%& \multicolumn{1}{p{2cm}}{\centering$\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\phantom{123456}\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\Box$} \\
+%%%%           &            &            &            &            &       \\[.2cm]
+%%%%\multicolumn{6}{p{11cm}}{\textbf{2.} Compared to one year ago, how would you rate your health in general now?} \\       [1pt]
+%%%%&
+%%%%\multicolumn{1}{p{1.8cm}}{\centering{Much better now than a year ago}} &
+%%%%\multicolumn{1}{p{2cm}}{\centering{Somewhat better now than a year ago}} &
+%%%%\multicolumn{1}{p{1.5cm}}{\centering{About the same as one year ago}} &
+%%%%\multicolumn{1}{p{2cm}}{\centering{Somewhat worse now than one year ago}} &
+%%%%\multicolumn{1}{p{1.8cm}}{\centering{Much worse now than one year ago}} \\[8pt]
+%%%%& \multicolumn{1}{p{1cm}}{\centering$\phantom{12345}\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\phantom{123456}\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\phantom{123}\Box$} &     
+%%%%\multicolumn{1}{p{1cm}}{\centering$\phantom{123456}\Box$} &     
+%%%%\multicolumn{1}{p{1.2cm}}{\centering$\phantom{123}\Box$} \\
+%%%%           &            &            &            &            &             \\[.2cm]
+%%%%\multicolumn{6}{p{11cm}}{\textbf{3.} The following items are about activities you might do during a typical day. Does your health now limit you in these
+%%%%activities? If so, how much?} \\[8pt]    
+%%%%           &            &            &
+%%%%\multicolumn{1}{p{1.5cm}}{\centering{Yes, limited a lot}} &
+%%%%\multicolumn{1}{p{1.5cm}}{\centering{Yes, limited a little}} &
+%%%%\multicolumn{1}{p{1.8cm}}{\centering{No, not limited at all}} \\[10pt]
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[a.] Vigorous activities, such as running, lifting heavy objects, participating in strenuous sports\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[b.] Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf?\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ & \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[c.] Lifting or carrying groceries\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[d.] Climbing several flights of stairs\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[e.] Climbing one flight of stairs\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[f.] Bending, kneeling or stooping\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[g.] Walking more than one mile\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[h.] Walking several blocks\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[i.] Walking one bloc\end{itemize}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} \\
+%%%%\multicolumn{3}{p{5cm}}{\vspace{-.35cm}\begin{itemize}\item[j.] Bathing or dressing yourself\end{itemize}\vspace{-.55cm}} &     $\Box$ &     $\hspace{-.3cm}\Box$ &     \multicolumn{1}{p{1.4cm}}{\centering$\hspace{.2cm}\Box$} 
+%%%%\end{tabular}}
+%%%%\end{minipage}
+%%%%}
+%%%%
+%%%%\frame{
+%%%%\frametitle{Valuing outcomes: utility scores}
+%%%%\begin{itemize}
+%%%%\item \textbf{Time-Trade Off}
+%%%%\begin{itemize}
+%%%%\item Trades \textit{\color{red}quality} for \textit{\color{blue}quantity} of life: imperfect health for longer or perfect health for fewer years?
+%%%%\item Number of years in full health varied until respondents are indifferent between the two options
+%%%%\item Can lead to negative utilities (states ``worse than death'')
+%%%%\end{itemize}
+%%%%\pause\vspace{5pt}
+%%%%\item \textbf{Standard Gamble}
+%%%%\begin{itemize}
+%%%%\item Purely decision-theoretic tool (\textbf{more on this later!})
+%%%%\item Identifies the ``best'' and ``worst'' possible outcomes \& assign utilities of 1 and 0, respectively
+%%%%\item Then, compares any other outcome to a combination of these two and derive utilities by conditions of (perceived) indifference
+%%%%\end{itemize}
+%%%%\pause\vspace{5pt}
+%%%%\item \textbf{Discrete choice experiments} (Conjoint analysis) 
+%%%%\begin{itemize}
+%%%%\item Constructs a set of alternatives based on a limited number of ``important'' attributes with different ``levels''
+%%%%\item Respondents indicate a preference to infer the relative weight of each level of each attribute
+%%%%\item Goes ``beyond health outcomes'' \& limits psychological bias
+%%%%\end{itemize}
+%%%%\end{itemize}
+%%%%}
+%%%%
+%%%%%%%\frame{
+%%%%%%%\frametitle{Valuing outcomes: utility scores}
+%%%%%%%\textbf{Time-Trade Off} (TTO) \vspace{-5pt}
+%%%%%%%\begin{itemize}
+%%%%%%%\item Trade \textit{\color{red}quality} for \textit{\color{blue}quantity} of life: imperfect health for longer or perfect health for fewer years?
+%%%%%%%\item Number of years in full health varied until respondents are indifferent between the two options
+%%%%%%%\item Can lead to negative utilities (states ``worse than death'')
+%%%%%%%\end{itemize}
+%%%%%%%\vspace{5pt}\pause
+%%%%%%%\textbf{Standard Gamble} (SG)\vspace{-5pt}
+%%%%%%%\begin{itemize}
+%%%%%%%\item Purely decision-theoretic tool. Identify ``best'' ($y^{\rm{max}}$) and ``worst'' ($y^{\rm{min}}$) outcomes and set $u(y^{\rm{max}})=1$ and $u(y^{\rm{min}})=0$
+%%%%%%%\item For any state $y\neq y^{\rm{min}},y^{\rm{max}}$ consider the gamble
+%%%%%%%\begin{itemize}
+%%%%%%%\item[1.] obtain $y$ with probability 1
+%%%%%%%\item[2.] obtain $y^{\rm{max}}$ with probability $\pi$ and $y^{\rm{min}}$ with probability $(1-\pi)$
+%%%%%%%\end{itemize}
+%%%%%%%\item Assign $y$ utility score $u(y)=\pi$ for $\pi$ making 1.\ and 2.\ \alert{indifferent}
+%%%%%%%\end{itemize}
+%%%%%%%}
+%%%%%%%
+%%%%%%%\frame{
+%%%%%%%\frametitle{Valuing outcomes: utility scores}
+%%%%%%%\textbf{Discrete choice experiments} (Conjoint analysis) \vspace{-5pt}
+%%%%%%%\begin{itemize}
+%%%%%%%\item The analyst constructs a set of alternatives based on a limited number of ``important'' attributes
+%%%%%%%\item Respondents indicate a preference over those alternatives
+%%%%%%%\begin{itemize}
+%%%%%%%\item Presenting two or more alternatives for comparison
+%%%%%%%\end{itemize}
+%%%%%%%\item Repeated measurements over alternatives with different levels of attributes
+%%%%%%%\begin{itemize}
+%%%%%%%\item \textbf{Objective}: Infer the relative weights of each level of each attribute
+%%%%%%%\end{itemize}
+%%%%%%%\vspace{10pt}
+%%%%%%%\item Goes ``beyond health outcomes''
+%%%%%%%\begin{itemize}
+%%%%%%%\item Many attributes enter the underlying valuation process
+%%%%%%%\item Can consider a broader range of ``benefits''
+%%%%%%%\item Avoids (limits) ``psychological bias''
+%%%%%%%\end{itemize}
+%%%%%%%\end{itemize}
+%%%%%%%}
+%%%%
+%%%%\frame{
+%%%%\frametitle{Valuing outcomes --- SF-6D}
+%%%%\begin{center}
+%%%%\fontsize{9}{10}\selectfont
+%%%%\begin{tabular}{cccccc}
+%%%%\hline
+%%%%{Health state} & {Observed mean} & \multicolumn{4}{c}{{Estimated utility}} \\
+%%%%& & \multicolumn{2}{c}{{Non parametric}} & \multicolumn{2}{c}{{Parametric}} \\
+%%%%& & \textit{Mean} & \textit{SD} & \textit{Mean} & \textit{SD} \\
+%%%%\hline\\[-6pt] 
+%%%%\textsf{111111}$\color{white}^a$ & 0.9896 & 1 & 0 & 1 & 0 \\
+%%%%\textsf{111112}$\color{white}^a$ & 0.8959 & 0.9419 & 0.0284 & 0.9689 & 0.0139 \\
+%%%%\textsf{111122}$^a$ & --- & 0.9107 & 0.0372 & 0.9333 & 0.0188 \\
+%%%%\textsf{121112}$\color{white}^a$ & 0.6769 & 0.8175 & 0.0299 & 0.9183 & 0.0176 \\
+%%%%\ldots & \ldots & \ldots & \ldots & \ldots & \ldots \\
+%%%%\textsf{321222}$^a$ & --- & 0.7133 & 0.034 & 0.8072 & 0.0244 \\
+%%%%\ldots & \ldots & \ldots & \ldots & \ldots & \ldots \\
+%%%%\textsf{433433}$\color{white}^a$ & 0.7218 & 0.6045 & 0.0326 & 0.6542 & 0.0230 \\
+%%%%\ldots & \ldots & \ldots & \ldots & \ldots & \ldots \\
+%%%%\textsf{645655}$\color{white}^a$ & 0.2130 & 0.2031 & 0.0231 & 0.2582 & 0.0129 \\
+%%%%\hline \\%
+%%%%\multicolumn{4}{l}{\fontsize{8}{8}\selectfont $^a$ State not observed in the sample} \\
+%%%%\hline
+%%%%\end{tabular}
+%%%%\end{center}
+%%%%
+%%%%\vspace{10pt}
+%%%%Utility scores can be used to quantify the value of a given treatment (\eg by means of \textbf{QALYs})
+%%%%}
+%%%%
+\frame{
+\frametitle{Quality-adjusted life years (QALYs)}
+\vspace{10pt}
+\begin{itemize}
+\item QALYs are a measure of disease burden, combining
+\begin{itemize}
+\item \textbf{\color{red} Quantity} of life (i.e.\ the amount of time spent in a given health state)
+\item \textbf{\color{blue} Quality} of life (i.e.\ the utility value attached to that health state)
+\end{itemize}
+\item Computed as the ``area under the curve''
+\end{itemize}
+\begin{center}
+\vspace{-7pt}
+\only<1|handout:0>{\includegraphics[scale=.44]{1.introduction-to-health-economic-evaluations/figs/QALYs}}
+\only<2|handout:1>{\includegraphics[scale=.44]{1.introduction-to-health-economic-evaluations/figs/QALYs2}}
+\end{center}
+}
+
+%%%% MOVE THIS TO MARKOV MODELS!!! %%%%
+%%%%\frame{
+%%%%\frametitle{Discounting}
+%%%%\begin{itemize}
+%%%%\item Costs and outcomes can occur at different times with respect to when the intervention is implemented
+%%%%\begin{itemize}
+%%%%\item Society tends to value benefits that arrive closer to the present time more than those that are achievable later in the future
+%%%%\end{itemize}
+%%%%\item \alert{Discounting} accounts for differential timing by reducing the value of costs \& effects in the future
+%%%%\begin{itemize}
+%%%%\item Particularly relevant for economic evaluation spanning over a time horizon $>$ 1 year (eg Markov models)
+%%%%\end{itemize}
+%%%%\item Define a discount rate $d$ (NICE suggest 3.5\% for costs and outcomes) and compute the \textbf{Present Value} of intervention (treatment) $t$ as \color{myblue}
+%%%%\begin{eqnarray*}
+%%%%\text{PV}^c_t = \sum_{j=0}^{J}\frac{c_{tj}}{(1+d)^j} \qquad \text{PV}^e_t = \sum_{j=0}^{J}\frac{e_{tj}}{(1+d)^j}
+%%%%\end{eqnarray*} \color{black}
+%%%%(for \color{blue}costs $c$ \color{black}and \color{red}clinical benefits $e$\color{black}, respectively)
+%%%%\end{itemize}
+%%%%}
+%%%%
+%%%\frame{
+%%%\frametitle{Quality Adjusted Life Years (QALYs)}
+%%%\vspace{0pt}
+%%%\begin{itemize}
+%%%\item QALYs are a measure of disease burden, combining
+%%%\begin{itemize}
+%%%\item \textbf{\color{red} Quantity} of life (i.e.\ the amount of time spent in a given health state)
+%%%\item \textbf{\color{blue} Quality} of life (i.e.\ the utility value attached to that health state)
+%%%\end{itemize}
+%%%\vspace{10pt} \pause
+%%%\item Formally, we can estimate the QALYs between times $j-1$ and $j$ as
+%%%\[q_{tj} = \color{blue} \frac{(u_{t(j-1)}+u_{tj})}{2} \color{red} \delta_j  \vspace{-5pt} \]
+%%%where \vspace{5pt}
+%%%\begin{itemize}
+%%%\item $\displaystyle\color{blue} \frac{(u_{t(j-1)}+u_{tj})}{2}$ $\Rightarrow$ average utility over the two time periods  \vspace{4pt}
+%%%\item $\color{red}\delta_j=\frac{\mbox{time between $j$ and $(j-1)$, in years}}{\mbox{reference period}}$ $\Rightarrow$ overall time, rescaled wrt \\[-5pt] \hspace{6.7cm} a basic unit (eg 1 year) 
+%%%\vspace{10pt}\pause
+%%%\end{itemize}
+%%%\item $\displaystyle\color{myblue} e_t = \sum_{j=1}^J q_{tj}$ $ \Rightarrow$ overall measure of clinical benefit
+%%%\end{itemize}
+%%%}
+%%%
+%%%\frame{
+%%%\frametitle{QALYs}
+%%%\begin{center}
+%%%\fontsize{8}{9}\selectfont
+%%%\begin{tabular}{lrrrrrr}
+%%%\hline
+%%%\multicolumn{2}{r}{{Baseline}} & \multicolumn{1}{c}{{6}} & \multicolumn{1}{c}{{12}} & \multicolumn{1}{c}{{18}} & \multicolumn{1}{c}{{24}} & \multicolumn{1}{c}{{Total}} \\
+%%%& & \multicolumn{1}{c}{{months}} & \multicolumn{1}{c}{{months}} & \multicolumn{1}{c}{{months}} & \multicolumn{1}{c}{{months}} & \multicolumn{1}{c}{{}} \\
+%%%\hline\\[-6pt]
+%%%\multicolumn{7}{l}{\textit{Treatment group ($t=1$)}}\\[2pt]
+%%%Utility score & 0.656 & 0.744 & 0.85 & 0.744 & 0.744 \\
+%%%QALYs & & 0.35 & 0.399 & 0.399 & 0.372 & 1.519 \\
+%%%Costs & & \pounds 2\,300 & \pounds 300 & \pounds 300 & \pounds 300 & \pounds 3\,200 \\[5pt]
+%%%\multicolumn{7}{l}{\textit{Control group ($t=0$)}}\\[2pt]
+%%%Utility score & 0.656 & 0.656 & 0.656 & 0.656 & 0.744 \\
+%%%QALYs & & \alert<2>{0.328} & 0.328 & 0.328 & 0.35 & 1.334 \\
+%%%Costs & & \pounds 300 & \pounds 300 & \pounds 300 & \pounds 300 & \pounds 1\,200 \\[5pt]
+%%%\multicolumn{7}{l}{\textit{Difference}}\\[2pt]
+%%%\multicolumn{2}{l}{\quad in QALYs ($\mbox{E}[\Delta_e]$)} & & & & & 0.185 \\
+%%%\multicolumn{2}{l}{\quad in costs ($\mbox{E}[\Delta_c]$)} & & & & & \pounds 2\,000\\[3pt]
+%%%\multicolumn{2}{l}{\textit{Cost per QALY}} & & & & & \pounds 10\,811 \\
+%%%\hline 
+%%%\end{tabular}
+%%%\end{center}
+%%%
+%%%\pause
+%%%\begin{itemize}
+%%%\item QALYs at 6 months ($j=1$) for treatment $t=0$: 
+%%%\[\color{myblue} q_{01} = \left(\frac{0.656+0.656}{2}\right)\left(\frac{0.5}{1}\right) = \color{red} 0.328 \]
+%%%since time between the measurements, 6 months, is only half a year
+%%%\end{itemize}
+%%%}
+
+\frame{
+\frametitle{Health economic evaluations}
+\begin{figure}
+\begin{tikzpicture}%[->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin]
+
+\onslide<1->{\draw(-5,-1) node[align=center,rectangle,rounded corners=2ex,draw,fill=red,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](1){Statistical\\ model};
+}
+\onslide<2->{
+\draw(0,-1) node[align=center,rectangle,rounded corners=2ex,draw,fill=gray,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](2){Economic\\ model};
+}
+\onslide<3->{
+\draw(4,-1) node[align=center,rectangle,rounded corners=2ex,draw,fill=orange,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](3){Decision\\ analysis};
+}
+\onslide<4->{
+\draw(-2.5,2) node[align=center,rectangle,rounded corners=2ex,draw,fill=blue!40,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](4){Uncertainty\\ analysis};
+}
+\onslide<1->{
+\draw(-5.2,-2.5) node[align=center,rectangle,rounded corners,draw=none,font=\sffamily\tiny,text width=3cm](5){
+\begin{itemize}
+\item Estimates relevant \textbf{population} parameters
+\item Varies with the type of available data (\& statistical approach!)
+\end{itemize}
+};
+}
+\onslide<2->{
+\draw(-0.2,-2.7) node[align=center,rectangle,rounded corners,draw=none,font=\sffamily\tiny,text width=3.5cm](6){
+\begin{itemize}
+\item Combines the parameters to obtain a population average measure for costs and clinical benefits
+\item Varies with the type of available data \& statistical model used
+\end{itemize}
+};
+}
+\onslide<3->{
+\draw(3.8,-2.9) node[align=center,rectangle,rounded corners,draw=none,font=\sffamily\tiny,text width=3.2cm](7){
+\begin{itemize}
+\item Summarises the economic model by computing suitable measures of ``cost-effectiveness''
+\item Dictates the best course of actions, given current evidence
+\item Standardised process
+\end{itemize}
+};
+}
+\onslide<4->{
+\draw(0.7,2.05) node[align=center,rectangle,rounded corners,draw=none,font=\sffamily\tiny,text width=4.1cm](8){
+\begin{itemize}
+\item Assesses the impact of uncertainty ( \eg in parameters or model structure) on the economic results
+\item Fundamentally Bayesian!
+\end{itemize}
+};
+}
+\onslide<4->{
+\draw [dashed,->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (1.40) -- (4.220);
+\draw [dashed,->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (4.320) -- (2.140);
+}
+\onslide<2->{
+\draw [->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (1.east) -- (2.west);
+}
+\onslide<3->{
+\draw [->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (2.east) -- (3.west);
+}
+\end{tikzpicture}
+\end{figure}
+}
+
+\frame{
+\frametitle{1.\ Statistical modelling}
+\begin{itemize}
+\item \red Sampling variability \black for the health economic outcomes is described by a distribution $\myblue p(e,c\mid \bm\theta^t)$, which depends on a set of population parameters~$\bm\theta^t$
+\begin{itemize}
+\item Probability of some clinical outcome
+\item Duration in treatment
+\item Reduction in the rate of occurrence of some event
+\item Unit cost of acquisition of a health technology
+\end{itemize}
+\vspace{5pt}\pause
+\item Under the Bayesian approach, \red parametric uncertainty \black is modelled using a prior distribution $\myblue p(\bm\theta^t)$
+\begin{itemize}
+\item This describes the level of knowledge in the value of the population parameters
+\item Can be based on subjective information, or existing data 
+\end{itemize}
+
+\vspace{5pt}\pause
+\item The way in which we construct our statistical model, depends on 
+\begin{itemize}
+\item The characteristic of the available data (\textbf{\color{blue}individual-level} vs \textbf{\color{red}aggregated} data)
+\item The statistical framework (Bayesian vs frequentist)
+\end{itemize}
+\end{itemize}
+}
+
+\frame{
+\frametitle{RCT vs decision-analytical models}
+\textbf{(Individual vs aggregated data)}
+\begin{itemize}
+\item RCTs are a key component in the evaluation of health care interventions
+\begin{itemize}
+\item Usually individual-level data are collected for a clinical study and increasingly often complemented by financial outcomes
+\end{itemize}
+\item However, there may issues with RCTs data
+\begin{itemize}
+\item Comparator(s) in the trial may not reflect standard of care
+\item Limited follow up 
+\item Small sample size
+\item Poor external validity
+\end{itemize}
+\item Health economic evaluations should include information from as many sources as possible
+\begin{itemize}
+\item Evidence synthesis of literature 
+\item Network meta-analysis
+\end{itemize}
+\end{itemize}
+}
+
+%%%\frame{
+%%%\frametitle{Models for individual-level data}
+%%%\vspace{-1pt}
+%%%Can factorise the joint distribution, for example as $\myblue p(e,c) = p(c) p(e \mid c)$ \vspace{-5pt}
+%%%\begin{center}
+%%%\includegraphics[scale=1]{1.introduction-to-health-economic-evaluations/figs/Individual_level}
+%%%\end{center}
+%%%\pause\vspace{-5pt}
+%%%For instance (\textbf{more on this later!}), can model \vspace{-5pt}
+%%%\begin{itemize}
+%%%\item \only<2|handout:2>{$c_{it} \sim \mbox{Gamma}(\eta_t,\lambda_t)$ [rate \& shape] $\Rightarrow \mu_{ct}=\eta_t/\lambda_t$} \only<3-|handout:3->{\gray $c_{it} \sim \mbox{Gamma}(\eta_t,\lambda_t)$ [rate \& shape] $\Rightarrow \mu_{ct}=\eta_t/\lambda_t$}
+%%%\item[] \only<2|handout:2>{\gray $c_{it} \sim \mbox{logNormal}(\eta_t,\lambda_t)$ [log mean \& log sd] $\Rightarrow \mu_{ct}=\mbox{exp}\left(\eta_t+\lambda^2_t/2\right)$} \only<3|handout:3>{\black $c_{it} \sim \mbox{logNormal}(\eta_t,\lambda_t)$ [log mean \& log sd] $\Rightarrow \mu_{ct}=\mbox{exp}\left(\eta_t+\lambda^2_t/2\right)$} \only<4|handout:4>{\gray $c_{it} \sim \mbox{logNormal}(\eta_t,\lambda_t)$ [log mean \& log sd] $\Rightarrow \mu_{ct}=\mbox{exp}\left(\eta_t+\lambda^2_t/2\right)$}
+%%%\only<2-3|handout:2-3>{\item[] \white $\mbox{E}[e_{it}]=\phi_{it}$; $g(\phi_{it}) = \xi_t+\gamma_t(c_{it}-\mu_{ct}) \Rightarrow \mu_{et}=g^{-1}(\xi_t)$}
+%%%\only<4|handout:4>{\item \black $\mbox{E}[e_{it}]=\phi_{it}$; $g(\phi_{it}) = \xi_t+\gamma_t(c_{it}-\mu_{ct}) \Rightarrow \mu_{et}=g^{-1}(\xi_t)$}
+%%%\end{itemize}
+%%%}
+%%%
+%%%\frame{
+%%%\frametitle{Decision-analytic models}
+%%%\vspace{0pt}
+%%%\begin{itemize}
+%%%\item Often, we do not have access to individual data and all we have is a set of aggregated data on relevant quantities
+%%%\item These can in turn be used to construct a ``population model'' to describe the disease history and its implications
+%%%\begin{itemize}
+%%%\item Decision trees
+%%%\item Markov (multistate) models
+%%%\end{itemize}
+%%%\end{itemize}
+%%%
+%%%\vspace{5pt}\pause
+%%%\textbf{Example}: influenza (\textbf{more on this later!})
+%%%\vspace{-8pt}
+%%%\begin{center}
+%%%\includegraphics[scale=.9]{1.introduction-to-health-economic-evaluations/figs/Decision_model}
+%%%\end{center}
+%%%}
+
+\frame{
+\frametitle{2.\ Economic modelling (types of evaluations)}
+\begin{itemize}
+\item Cost minimisation 
+\begin{itemize}
+\item Assumes that the benefits produced by two interventions are identical $\Rightarrow$ the only dimension of interest is costs
+\end{itemize}
+\item Cost-benefit analysis
+\begin{itemize}
+\item Requires that costs and benefits are converted and analysed into monetary terms $\Rightarrow$ difficulties in valuing health outcomes in monetary units
+\end{itemize}
+\vspace{5pt}\pause
+\item \textbf{\color{red}Cost-effectiveness analysis} (CEA)
+\begin{itemize}
+\item Evaluates \alert{cost-per-outcome gained}
+\item Outcomes are usually ``hard'' measurements (eg death) $\Rightarrow$ easy to understand for clinicians, but difficult to compare across diseases (may have different main outcome)
+\end{itemize}
+\item \textbf{\color{blue}Cost-utility analysis} (CUA)
+\begin{itemize}
+\item Considers a common health outcome unit (= QALYs), so easy to compare across diseases
+\item Often interchangeable with CEA (common methodology!)
+\end{itemize}
+\end{itemize}
+}
+
+\frame{
+\frametitle{2.\ Economic modelling}
+Can think of this step as the process of obtaining relevant population summaries for the measures of cost \& clinical benefits. For example, when comparing two interventions $t=0,1$, the main focus is on
+\begin{itemize}
+\item The \textbf{\blue increment in mean benefits}
+\[\myblue \Delta_e=\red\underbrace{\myblue\mbox{E}[e \mid \theta^1]}_{\mu_1^e} \myblue - \red\underbrace{\myblue\mbox{E}[e \mid \theta^0]}_{\mu_0^e}\]\vspace{-10pt}
+\item The \textbf{\blue increment in mean costs}:
+\[ \myblue \Delta_c=\red\underbrace{\myblue\mbox{E}[c \mid \theta^1]}_{\mu_1^c} \myblue - \red\underbrace{\myblue\mbox{E}[c \mid \theta^0]}_{\mu_0^c} \]\vspace{-10pt}\pause
+\item \textbf{NB}: In a Bayesian context, these are functions of $\boldsymbol\theta$ and thus random variables!
+\item When using individual-level data, estimation typically directly available from the statistical model; for aggregated data, it may be necessary to combine the parameters to obtain these
+\end{itemize}
+}
+
+\frame{
+\frametitle{Cost effectiveness plane}
+\begin{figure}
+\begin{tikzpicture}
+\node{\includegraphics[scale=.55]{1.introduction-to-health-economic-evaluations/figs/CEPlane_empty}};
+\draw(3.5,-.1) node[align=center,rectangle,rounded corners,draw=none,text width=4.1cm](8){\fontsize{8}{8}\selectfont $\Delta_e$};
+\draw(-.9,3.2) node[align=center,rectangle,rounded corners,draw=none,text width=4.1cm](8){\fontsize{8}{8}\selectfont $\Delta_c$};
+\end{tikzpicture}
+\end{figure}
+}
+
+\frame{
+\frametitle{3.\ Decision analysis}
+\vspace{10pt}
+In order to compare the two interventions ($t=0,1$), we define suitable health economic indicators
+\begin{itemize}
+\item The \textbf{\color{red} population average increment in benefits}
+\[ \color{myblue} \mbox{E}[\Delta_e]=\bar{e}_1 - \bar{e}_0  = \mbox{E}[\mu_1^e]-\mbox{E}[\mu_0^e]\]\vspace{-10pt}
+\item The \textbf{\color{red} population average increment in costs}:
+\[ \color{myblue} \mbox{E}[\Delta_c]=\bar{c}_1 - \bar{c}_0 = \mbox{E}[\mu_1^c]-\mbox{E}[\mu_0^c] \]\vspace{-10pt}
+\pause
+\item Generally, economic summaries are computed in the form of ``cost per outcome'' ratios
+\[ \color{myblue} \mbox{ICER} = \frac{\mbox{E}[\Delta_c]}{\mbox{E}[\Delta_e]} = \mbox{\color{blue} Additional cost to gain 1 unit of benefit} \]
+\end{itemize}
+}
+
+\frame{
+\frametitle{Cost effectiveness plane vs.\ ICER}
+\begin{figure}
+\begin{tikzpicture}
+\node{\includegraphics[scale=.55]{1.introduction-to-health-economic-evaluations/figs/CEPlane_ICER}};
+\draw(3.5,-.1) node[align=center,rectangle,rounded corners,draw=none,text width=4.1cm](8){\fontsize{8}{8}\selectfont $\Delta_e$};
+\draw(-.9,3.2) node[align=center,rectangle,rounded corners,draw=none,text width=4.1cm](8){\fontsize{8}{8}\selectfont $\Delta_c$};
+\draw(2.5,1.6) node[align=center,rectangle,rounded corners,draw=none,text width=6.0cm](8){\fontsize{8}{8}\selectfont $\mbox{ICER}=\frac{\mbox{E$[\Delta_c]$}}{\mbox{E$[\Delta_e]$}}=\mbox{Cost per QALY}$};
+\end{tikzpicture}
+\end{figure}
+}
+
+\frame{
+\frametitle{Comparing health interventions}
+Decisions based on ICER can be tricky
+\begin{itemize}
+\item Equivalent ICERs can mean very different things!
+\begin{itemize}
+\item $\color{blue}(\mbox{E}[\Delta_e],\mbox{E}[\Delta_c])=(2,200)$, indicates that the new treatment produces on average an increase in effectiveness of 2 units at the cost of extra \pounds 200
+\item $\color{red}(\mbox{E}[\Delta_e],\mbox{E}[\Delta_c])=(-2,-200)$ indicates that the new intervention is less effective, but cheaper
+\item In both cases, ICER = \pounds 100
+\end{itemize}
+\vspace{5pt}
+%\item The ratio $\color{myblue} \Delta_c/\Delta_e$ can have infinite variance and it is generally difficult to perform interval estimation for its values
+\item \textbf{NB}: the ICER is a \alert{``pure'' number (dimension-less)}
+\begin{itemize}
+\item It is a ratio of two expected values --- all forms of uncertainty are marginalised out when computing it
+\item Not meaningful to make interval estimation 
+\item \textbf{More on this later!}
+\end{itemize}
+\end{itemize}
+\vspace{15pt}
+Thus, it is helpful to re-phrase the problem in decision theoretic terms (\textbf{more on this later!})
+}
+
+\frame{
+\frametitle{4.\ Uncertainty analysis \small --- Frequentist vs Bayesian approach}
+\begin{figure}
+\begin{tabular}{lp{2cm}r}
+\multicolumn{1}{c}{1.\ Estimation (base-case)} & & \multicolumn{1}{c}{2.\ PSA} \\
+\begin{tikzpicture}
+\draw(-10,-1) node[align=center,draw,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](1){$\theta$};
+\draw(-10,-3) node[align=center,circle,draw,fill=none,font=\sffamily\fontsize{9}{10}\selectfont](2){$y$};
+\draw(-12,-3) node[align=center,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](3){$p(y\mid \theta)$};
+\draw(-12,-1) node[align=center,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](4){$\hat\theta=f(Y)$};
+\draw [->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (1.south) -- (2.north);
+\draw [dashed,->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (3.north) -- (4.south);
+\end{tikzpicture} & 
+\rput(1,1.5){$\Rightarrow$}
+&
+\begin{tikzpicture}
+\draw(-7,-1) node[align=center,circle,draw,fill=none,font=\sffamily\fontsize{9}{10}\selectfont](1){$\theta$};
+\draw(-7,-3)  node[align=center,rectangle,rounded corners=2ex,draw,fill=gray,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](2){Economic\\ model};
+\draw(-9,-1) node[align=center,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](4){$p(\theta)\leftrightsquigarrow g(\hat\theta)$};
+\draw [->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (1.south) -- (2.north);
+\end{tikzpicture} \pause \\[25pt]
+\multicolumn{3}{c}{Estimation \& PSA (one stage)}\\[3pt]
+\multicolumn{3}{c}{ 
+\begin{tikzpicture}
+\draw(-12,-1) node[align=center,circle,draw,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](1){$\theta$};
+\draw(-12,-3) node[align=center,circle,draw,fill=none,font=\sffamily\fontsize{9}{10}\selectfont](2){$y$};
+\draw(-13.5,-3) node[align=center,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](3){$p(y\mid \theta)$};
+\draw(-8.8,-1)  node[align=center,rectangle,rounded corners=2ex,draw,fill=gray,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=2.2cm,minimum height=1cm](5){Economic\\ model};
+\draw(-13.5,-1) node[align=center,fill=none,minimum width=.5cm,minimum height=.5cm,font=\sffamily\fontsize{9}{10}\selectfont](4){$p(\theta)$};
+\draw(-10.85,-.8) node[align=center,fill=none,font=\sffamily\fontsize{9}{10}\selectfont](6){$\red p(\theta\mid y)$};
+\draw(-12,-3) node[align=center,draw,fill=none,color=red,font=\sffamily\fontsize{9}{10}\selectfont,minimum width=.6	2cm,minimum height=.62cm,dashed](7){};
+\draw [->,>=latex,shorten >=0pt,auto,node distance=3cm,ultra thin] (1.south) -- (2.north);
+\draw [dashed,->,>=latex,shorten >=0pt,auto,node distance=3cm,thin,color=red] (2.180) to [bend left=90] (1.180);
+\draw [dashed,->,>=latex,shorten >=0pt,auto,node distance=3cm,thin,color=red] (1.east) -- (5.west);
+\end{tikzpicture}}
+\end{tabular}
+\end{figure}
+}
+
+\frame{
+\frametitle{PSA to \textbf{parameter} uncertainty}
+\begin{overprint}
+%%%\vspace{7pt}
+\onslide<1>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp} 
+\rput(0,7){\fontsize{6}{7}\selectfont \parbox{1.2cm}{$\pi_0$}}%
+\rput(0,5){\fontsize{6}{7}\selectfont \parbox{1.18cm}{$\rho$}}%
+\rput(-.5,3.2){\fontsize{6}{7}\selectfont $\gamma$}
+\rput(-.4,1.3){\fontsize{6}{7}\selectfont $c^{\rm{hosp}}$}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\rput(2,2){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-1){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-2.7){\white$\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black}
+\end{minipage}
+\end{tabular}
+
+\onslide<2>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp} 
+\rput(.0,7){\fontsize{6}{7}\selectfont \parbox{1.2cm}{$\pi_0$}}
+\rput(0.0,5){\fontsize{6}{7}\selectfont \parbox{1.18cm}{$\rho$}}
+\rput(-.5,3.2){\fontsize{6}{7}\selectfont $\gamma$}
+\rput(-.4,1.3){\fontsize{6}{7}\selectfont $c^{\rm{hosp}}$}
+\rput(-1,5.9){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-1.52,4.0){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-1.4,2.1){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-.96,.25){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\rput(2,2){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+741 & 670\,382.1 \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+ &  \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-1){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+732 & 1\,131\,978 \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+ &  \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-2.7){\white$\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black}
+\rput(-5.5,.3){$\Rightarrow$}
+\rput(-0,.3){$\Rightarrow$}
+\end{minipage}
+\end{tabular}
+
+\onslide<3>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp} 
+\rput(.0,7){\fontsize{6}{7}\selectfont \parbox{1.2cm}{$\pi_0$}}
+\rput(0.0,5){\fontsize{6}{7}\selectfont \parbox{1.18cm}{$\rho$}}
+\rput(-.5,3.2){\fontsize{6}{7}\selectfont $\gamma$}
+\rput(-.4,1.3){\fontsize{6}{7}\selectfont $c^{\rm{hosp}}$}
+\rput(-.88,5.9){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-1.01,4.0){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-1.11,2.1){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-.76,.25){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\rput(2,2){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+741 & 670\,382.1 \\
+699 & 871\,273.3 \\
+ &  \\
+ &  \\
+\hline
+ &  \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-1){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+732 & 1\,131\,978 \\
+664 & 1\,325\,654 \\
+ &  \\
+ &  \\
+\hline
+ &  \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-2.7){\white$\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black}
+\rput(-5.5,.3){$\Rightarrow$}
+\rput(-0,.3){$\Rightarrow$}
+\end{minipage}
+\end{tabular}
+
+\onslide<4>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma} \\[4pt]
+\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp} 
+\rput(.0,7){\fontsize{6}{7}\selectfont \parbox{1.2cm}{$\pi_0$}}
+\rput(0.0,5){\fontsize{6}{7}\selectfont \parbox{1.18cm}{$\rho$}}
+\rput(-.5,3.2){\fontsize{6}{7}\selectfont $\gamma$}
+\rput(-.4,1.3){\fontsize{6}{7}\selectfont $c^{\rm{hosp}}$}
+\rput(-1.33,5.9){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-1.21,4.0){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-.81,2.1){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\rput(-.56,.25){\fontsize{7}{7}\selectfont\red \textbf{x}}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.7cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\rput(2,2){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+741 & 670\,382.1 \\
+699 & 871\,273.3 \\
+$\ldots$ & $\ldots$ \\
+726 & 425\,822.2 \\
+\hline
+\textbf{716.2} & \textbf{790\,381.2} \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-1){
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+732 & 1\,131\,978 \\
+664 & 1\,325\,654 \\
+$\ldots$ & $\ldots$ \\
+811 & 766\,411.4 \\
+\hline
+\textbf{774.5} & \textbf{1\,066\,849.8} \\
+\hline
+\end{tabular}
+}
+
+\rput(2,-2.7){$\displaystyle \mbox{ICER =} \frac{\mbox{276\,468.6}}{\mbox{58.3}}$}
+\rput(2,-3.2){$\displaystyle \mbox{\white ICER\black =} \mbox{ 6\,497.1}$}
+\rput(-5.5,.3){$\Rightarrow$}
+\rput(-0,.3){$\Rightarrow$}
+\end{minipage}
+\end{tabular}
+
+\end{overprint}
+}
+
+%%%%\frame{
+%%%%\frametitle{Comparing health interventions}
+%%%%\vspace{0pt}
+%%%%\begin{center}
+%%%%\includegraphics[scale=.85]{1.introduction-to-health-economic-evaluations/figs/CEPlaneCh1}
+%%%%\end{center}
+%%%%
+%%%%\vspace{-5pt} \fontsize{9}{10}\selectfont
+%%%%\begin{itemize}
+%%%%\item The line indicates the decision-maker's \textit{willingness-to-pay}, which is usually indicated as $k$ 
+%%%%\item Options below the line (ie those lying in the grey area) are ``sustainable'', in the sense that the extra cost required is more than offset by the gain in effects
+%%%%\end{itemize}
+%%%%
+%%%%}
+%%%%
+%%%%\frame{
+%%%%\frametitle{Comparing health interventions}
+%%%%Decisions based on ICER can be tricky
+%%%%\begin{itemize}
+%%%%\item Equivalent ICERs can mean very different things!
+%%%%\begin{itemize}
+%%%%\item $\color{blue}(\mbox{E}[\Delta_e],\mbox{E}[\Delta_c])=(2,200)$, indicates that the new treatment produces on average an increase in effectiveness of 2 units at the cost of extra \pounds 200
+%%%%\item $\color{red}(\mbox{E}[\Delta_e],\mbox{E}[\Delta_c])=(-2,-200)$ indicates that the new intervention is less effective, but cheaper
+%%%%\item In both cases, ICER = \pounds 100
+%%%%\end{itemize}
+%%%%\vspace{5pt}
+%%%%%\item The ratio $\color{myblue} \Delta_c/\Delta_e$ can have infinite variance and it is generally difficult to perform interval estimation for its values
+%%%%\item \textbf{NB}: the ICER is a \alert{``pure'' number (dimension-less)}
+%%%%\begin{itemize}
+%%%%\item It is a ratio of two expected values --- all forms of uncertainty are marginalised out when computing it
+%%%%\item Not meaningful to make interval estimation 
+%%%%\item \textbf{More on this later!}
+%%%%\end{itemize}
+%%%%\end{itemize}
+%%%%\vspace{15pt}
+%%%%Thus, it is helpful to re-phrase the problem in decision theoretic terms (\textbf{more on this later!})
+%%%%}

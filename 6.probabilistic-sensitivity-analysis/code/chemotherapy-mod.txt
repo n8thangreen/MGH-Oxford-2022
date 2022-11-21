@@ -1,0 +1,43 @@
+## Health economic evaluation --- example for Chapter 3
+## Loosely based on Fox-Rushby & Cairns (2005). Economic Evaluation. Open University Press
+
+model{
+
+# Side effects analysis
+num.se ~ dbin(pi[1], num.pat)     # sampling distribution
+pi[1] ~ dbeta(1, 1)               # prior distribution
+
+rho ~ dnorm(m.rho, tau.rho)
+pi[2] <- rho * pi[1]
+
+# Treatment of side effects analysis
+num.amb ~ dbin(gamma, num.se)      # sampling distribution
+gamma ~ dbeta(1, 1)                # prior distribution
+
+# Costs
+c.amb ~ dlnorm(m.amb, tau.amb)     # Cost of ambulatory care 
+c.hosp ~ dlnorm(m.hosp, tau.hosp)  # Cost of hospitalization
+
+# Predictive distributions on the clinical outcomes
+  for (t in 1:2) {
+  	#A[t] <- pi[t] * gamma          # Care occurs, only occurs following side effect
+		#H[t] <- pi[t] * (1 - gamma)    # Hospitalization occurs, only occurs following side effect
+
+		SE[t] ~ dbin(pi[t], N)         # Expected number of patients with side effects
+		A[t] ~ dbin(gamma, SE[t])      # Expected number of patients with with ambulatory care
+		H[t] <- SE[t] - A[t]           # Expected number of patients with with hospitalization
+	}
+
+# Find total costs and effects
+for (t in 1:2) {
+    #mu.e[t] <- 1 - pi[t]
+    #mu.c[t] <- c.drug[t] + c.amb * A[t] + c.hosp * H[t]
+    mu.e[t] <- N - SE[t]
+    mu.c[t] <- c.drug[t] * N + c.amb * A[t] + c.hosp * H[t]
+
+}
+
+# For VOI calculations
+pi1 <- pi[1]
+pi2 <- pi[2]
+}

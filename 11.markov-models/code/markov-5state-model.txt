@@ -1,0 +1,54 @@
+model{
+#Multinomial distribution for r, for the i=4 non-absorbing states
+for(i in 1:4){
+    r.sfc[i,1:5] ~ dmulti(p.sfc[i,1:5], n.sfc[i]) 
+    r.fp[i,1:5] ~ dmulti(p.fp[i,1:5], n.fp[i])      
+}
+
+#Fixed transition probabilites for the absorbing state
+for(j in 1:5){
+    p.sfc[5,j] <- p.fixed[j]
+    p.fp[5,j] <- p.fixed[j]
+}
+
+#Starting state
+for(j in 1:5){
+    s.sfc[1,j]<-s.start[j]
+    s.fp[1,j]<-s.start[j]
+}
+
+#Markov model
+for(t in 2:13){
+    for(j in 1:5){
+        s.sfc[t,j] <- inprod(s.sfc[t-1,1:5],p.sfc[1:5,j])  #state proportions
+        s.fp[t,j] <- inprod(s.fp[t-1,1:5],p.fp[1:5,j])
+    }
+        weekly.cost.tf.fp[t] <- inprod(s.fp[t,1:4],weekly.cost.fp[1:4])/sum(s.fp[t,1:4]) #cost of TF at time t
+        cost.sfc[t] <- inprod(s.sfc[t,1:4],weekly.cost.sfc[1:4])+s.sfc[t,5]*weekly.cost.tf.fp[t] #cost at time t
+        cost.fp[t] <- inprod(s.fp[t,1:4],weekly.cost.fp[1:4])+s.fp[t,5]*weekly.cost.tf.fp[t]
+}
+
+#Costs and utilities
+mu.c[1] <- sum(cost.fp[2:13])
+mu.c[2] <- sum(cost.sfc[2:13])
+delta.c <- mu.c[2] - mu.c[1]
+mu.e[1] <- sum(s.fp[2:13,1])
+mu.e[2] <- sum(s.sfc[2:13,1])
+delta.e <- mu.e[2] - mu.e[1]
+
+#Dirichlet prior distributions for the transition probabilities
+for(i in 1:4){
+    p.sfc[i,1:5] ~ ddirch(prior.sfc[i,1:5])
+    p.fp[i,1:5] ~ ddirch(prior.fp[i,1:5])
+}
+
+#INB and CEAC
+K.space<-5
+for(j in 1:11){
+    K[j] <- (j-1)*K.space
+    INB[j] <- K[j]*delta.e - delta.c
+    Q[j] <- step(INB[j])
+}
+
+
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.22)  22 NOV 2022 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.22)  22 NOV 2022 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1743,7 +1743,7 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 <R/marginal-distns.png, id=187, 150.5625pt x 481.8pt>
 File: R/marginal-distns.png Graphic file (type png)
 <use R/marginal-distns.png>
-Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
 (pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
 <1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf, id=188, 31
 6.18124pt x 240.9pt>
@@ -1751,7 +1751,7 @@ File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 <1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf, id=189, 31
 6.18124pt x 240.9pt>
@@ -1759,102 +1759,168 @@ File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
-<1.introduction-to-health-economic-evaluations/figs/pi0_grid.png, id=190, 151.9
+<R/means-only.png, id=190, 150.5625pt x 481.8pt>
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+<R/max-min-pi.png, id=191, 150.5625pt x 481.8pt>
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+<R/max-min-rho.png, id=192, 150.5625pt x 481.8pt>
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+<1.introduction-to-health-economic-evaluations/figs/pi0_grid.png, id=193, 151.9
 86pt x 142.788pt>
 File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
 ile (type png)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-_grid.png  used on input line 344.
+_grid.png  used on input line 524.
 (pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
-<1.introduction-to-health-economic-evaluations/figs/rho.pdf, id=192, 202.7575pt
+<1.introduction-to-health-economic-evaluations/figs/rho.pdf, id=195, 202.7575pt
  x 179.67125pt>
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
-<1.introduction-to-health-economic-evaluations/figs/gamma.pdf, id=193, 202.7575
+<1.introduction-to-health-economic-evaluations/figs/gamma.pdf, id=196, 202.7575
 pt x 179.67125pt>
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
-<1.introduction-to-health-economic-evaluations/figs/chosp.pdf, id=194, 191.7162
+<1.introduction-to-health-economic-evaluations/figs/chosp.pdf, id=197, 191.7162
 5pt x 179.67125pt>
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
-<1.introduction-to-health-economic-evaluations/figs/pi0.pdf, id=195, 202.7575pt
+<1.introduction-to-health-economic-evaluations/figs/pi0.pdf, id=198, 202.7575pt
  x 179.67125pt>
 File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -1862,46 +1928,46 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 344.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -1915,22 +1981,85 @@ s/ModelGraph2.pdf> <./1.introduction-to-health-economic-evaluations/figs/ModelG
 raph4.pdf>]
 File: R/marginal-distns.png Graphic file (type png)
 <use R/marginal-distns.png>
-Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
 (pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -1938,40 +2067,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
 ile (type png)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-_grid.png  used on input line 344.
+_grid.png  used on input line 524.
 (pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -1979,40 +2108,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2020,46 +2149,46 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 344.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2068,28 +2197,88 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 
 [13
 
- <./1.introduction-to-health-economic-evaluations/figs/pi0_grid.png> <./1.intro
-duction-to-health-economic-evaluations/figs/rho.pdf> <./1.introduction-to-healt
-h-economic-evaluations/figs/gamma.pdf> <./1.introduction-to-health-economic-eva
-luations/figs/chosp.pdf>]
+ <./R/means-only.png>]
 File: R/marginal-distns.png Graphic file (type png)
 <use R/marginal-distns.png>
-Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
 (pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2097,40 +2286,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
 ile (type png)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-_grid.png  used on input line 344.
+_grid.png  used on input line 524.
 (pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2138,40 +2327,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2179,46 +2368,46 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 344.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2227,25 +2416,88 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 
 [14
 
- <./1.introduction-to-health-economic-evaluations/figs/pi0.pdf>]
+ <./R/max-min-pi.png>]
 File: R/marginal-distns.png Graphic file (type png)
 <use R/marginal-distns.png>
-Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
 (pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2253,40 +2505,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
 ile (type png)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-_grid.png  used on input line 344.
+_grid.png  used on input line 524.
 (pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2294,40 +2546,40 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
@@ -2335,46 +2587,46 @@ File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
 type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
-.pdf  used on input line 344.
+.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
-ma.pdf  used on input line 344.
+ma.pdf  used on input line 524.
 (pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
  (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
-sp.pdf  used on input line 344.
+sp.pdf  used on input line 524.
 (pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph2.pdf  used on input line 344.
+elGraph2.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
 c file (type pdf)
 <use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
 Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
-elGraph4.pdf  used on input line 344.
+elGraph4.pdf  used on input line 524.
 (pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
 
-Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
 [][] 
  []
 
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 344.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2383,15 +2635,217 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 
 [15
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-370.
- (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
-File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
+ <./R/max-min-rho.png>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 524.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 370.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2400,10 +2854,220 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 
 [16
 
-]
+ <./1.introduction-to-health-economic-evaluations/figs/pi0_grid.png> <./1.intro
+duction-to-health-economic-evaluations/figs/rho.pdf> <./1.introduction-to-healt
+h-economic-evaluations/figs/gamma.pdf> <./1.introduction-to-health-economic-eva
+luations/figs/chosp.pdf>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 524.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 370.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2412,10 +3076,217 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 
 [17
 
-]
+ <./1.introduction-to-health-economic-evaluations/figs/pi0.pdf>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/means-only.png Graphic file (type png)
+<use R/means-only.png>
+Package pdftex.def Info: R/means-only.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-pi.png Graphic file (type png)
+<use R/max-min-pi.png>
+Package pdftex.def Info: R/max-min-pi.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: R/max-min-rho.png Graphic file (type png)
+<use R/max-min-rho.png>
+Package pdftex.def Info: R/max-min-rho.png  used on input line 524.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 524.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 524.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 524.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 524.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 524--524
+[][] 
+ []
+
 File: UCL.jpg Graphic file (type jpg)
 <use UCL.jpg>
-Package pdftex.def Info: UCL.jpg  used on input line 370.
+Package pdftex.def Info: UCL.jpg  used on input line 524.
 (pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
 
 Overfull \hbox (4.44588pt too wide) has occurred while \output is active
@@ -2423,6 +3294,47 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
  []
 
 [18
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+550.
+ (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 550.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 550.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
+
+]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 550.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
 
 ])
 \tf@nav=\write7
@@ -2434,8 +3346,12 @@ Overfull \hbox (4.44588pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `talks.snm'.
 
- (talks.aux (Preliminaries.aux)
-(uncertainty-analysis/uncertainty-analysis.aux))
+
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (18 not 21).
+               Rerun to correct this.
+
+(talks.aux (Preliminaries.aux) (uncertainty-analysis/uncertainty-analysis.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2443,10 +3359,10 @@ Package rerunfilecheck Info: File `talks.out' has not changed.
 (rerunfilecheck)             Checksum: 6F3D5EC7C16689A166517B4940ABC012;250.
  ) 
 Here is how much of TeX's memory you used:
- 36819 strings out of 475285
- 761320 string characters out of 2773647
- 1132428 words of memory out of 3000000
- 57442 multiletter control sequences out of 15000+600000
+ 36858 strings out of 475285
+ 762051 string characters out of 2773647
+ 1152006 words of memory out of 3000000
+ 57472 multiletter control sequences out of 15000+600000
  486499 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,25n,133p,1798b,952s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -2479,9 +3395,9 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
 :/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
 s/msam5.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/symbols/msam7.pfb>
-Output written on talks.pdf (18 pages, 1063511 bytes).
+Output written on talks.pdf (21 pages, 1079836 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

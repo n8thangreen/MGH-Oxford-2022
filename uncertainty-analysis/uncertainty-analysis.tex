@@ -44,10 +44,14 @@
 
 }
 
+
 \frame{
-\frametitle{4.\ Uncertainty analysis \hspace{0pt plus 1 filll} \small $\left[p(\bm\theta\mid e,c)\right.$ vs $\left. g_i(\theta_i)\right]$}
+\frametitle{4.\ Uncertainty analysis
+\hspace{0pt plus 1 filll} \small $\left[p(\bm\theta\mid e,c)\right.$ vs $\left. g_i(\theta_i)\right]$}
 \begin{overprint}
 %%%\vspace{7pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onslide<1|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
@@ -105,9 +109,183 @@ Benefits & Costs \\
 \end{minipage}
 \end{tabular}
 
-
-%%%%%%%% new slide
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onslide<2|handout:0>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/means-only}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\begin{tikzpicture}
+\draw(2.5,2) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-1) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<3|handout:0>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/max-min-pi}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\begin{tikzpicture}
+\draw(2.5,2) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-1) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<4|handout:0>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/max-min-rho}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\begin{tikzpicture}
+\draw(2.5,2) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-1) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<5|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
@@ -192,7 +370,9 @@ Benefits & Costs \\
 \end{minipage}
 \end{tabular}
 
-\onslide<3|handout:0>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<6|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
@@ -264,7 +444,7 @@ Benefits & Costs \\
 \end{minipage}
 \end{tabular}
 
-\onslide<4|handout:1>
+\onslide<7|handout:1>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\

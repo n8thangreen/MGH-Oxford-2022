@@ -1,0 +1,2487 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.22)  22 NOV 2022 12:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./talks.tex
+(talks.tex
+LaTeX2e <2022-11-01>
+L3 programming layer <2022-11-02>
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
+Document Class: beamer 2022/09/13 v3.68 A class for typesetting presentations
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemodes
+.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+)
+\beamer@tempbox=\box51
+\beamer@tempcount=\count186
+\c@beamerpauses=\count187
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasedecod
+e.sty
+\beamer@slideinframe=\count188
+\beamer@minimum=\count189
+\beamer@decode@box=\box52
+)
+\beamer@commentbox=\box53
+\beamer@modecount=\count190
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\headdp=\dimen140
+\footheight=\dimen141
+\sidebarheight=\dimen142
+\beamer@tempdim=\dimen143
+\beamer@finalheight=\dimen144
+\beamer@animht=\dimen145
+\beamer@animdp=\dimen146
+\beamer@animwd=\dimen147
+\beamer@leftmargin=\dimen148
+\beamer@rightmargin=\dimen149
+\beamer@leftsidebar=\dimen150
+\beamer@rightsidebar=\dimen151
+\beamer@boxsize=\dimen152
+\beamer@vboxoffset=\dimen153
+\beamer@descdefault=\dimen154
+\beamer@descriptionwidth=\dimen155
+\beamer@lastskip=\skip47
+\beamer@areabox=\box54
+\beamer@animcurrent=\box55
+\beamer@animshowbox=\box56
+\beamer@sectionbox=\box57
+\beamer@logobox=\box58
+\beamer@linebox=\box59
+\beamer@sectioncount=\count191
+\beamer@subsubsectionmax=\count192
+\beamer@subsectionmax=\count193
+\beamer@sectionmax=\count194
+\beamer@totalheads=\count195
+\beamer@headcounter=\count196
+\beamer@partstartpage=\count197
+\beamer@sectionstartpage=\count198
+\beamer@subsectionstartpage=\count199
+\beamer@animationtempa=\count266
+\beamer@animationtempb=\count267
+\beamer@xpos=\count268
+\beamer@ypos=\count269
+\beamer@ypos@offset=\count270
+\beamer@showpartnumber=\count271
+\beamer@currentsubsection=\count272
+\beamer@coveringdepth=\count273
+\beamer@sectionadjust=\count274
+\beamer@toclastsection=\count275
+\beamer@tocsectionnumber=\count276
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoptio
+ns.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+))
+\beamer@paperwidth=\skip48
+\beamer@paperheight=\skip49
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
+\Gm@dimlist=\toks17
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
+ty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common-lists.tex))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-latex.def
+\pgfutil@abb=\box60
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
+.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
+)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
+sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+sfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
+.code.tex
+\pgf@x=\dimen166
+\pgf@xa=\dimen167
+\pgf@xb=\dimen168
+\pgf@xc=\dimen169
+\pgf@y=\dimen170
+\pgf@ya=\dimen171
+\pgf@yb=\dimen172
+\pgf@yc=\dimen173
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count284
+\pgfmath@box=\box61
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.basic.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.trigonometric.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.random.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.comparison.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.base.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.round.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.misc.code.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.integerarithmetics.code.tex)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
+t.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\size9.clo
+File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
+.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
+.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex)
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count290
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
+cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+re.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
+.tex)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count293
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen261
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen265
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box65
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\xxcolor.
+sty
+Package: xxcolor 2003/10/24 ver 0.1
+\XC@nummixins=\count296
+\XC@countmixins=\count297
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+y
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
+y
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
+o.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count298
+)
+\@linkdim=\dimen267
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+y
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count301
+ (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4045.
+Package hyperref Info: Option `implicit' set `false' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count302
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen268
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count303
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+\Hy@abspage=\count304
+
+
+Package hyperref Message: Stopped early.
+
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaserequi
+res.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecompa
+tibility.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasefont.
+sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\sansmat
+haccent.sty
+Package: sansmathaccent 2020/01/31
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.s
+ty
+Package: scrlfile 2022/10/12 v3.38 KOMA-Script package (file load hooks)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-h
+ook.sty
+Package: scrlfile-hook 2022/10/12 v3.38 KOMA-Script package (using LaTeX hooks)
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.st
+y
+Package: scrlogo 2022/10/12 v3.38 KOMA-Script package (logo)
+)))))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetrans
+lator.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator.
+sty
+Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasemisc.
+sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetwosc
+reens.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseoverl
+ay.sty
+\beamer@argscount=\count307
+\beamer@lastskipcover=\skip50
+\beamer@trivlistdepth=\count308
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetitle
+.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasesecti
+on.sty
+\c@lecture=\count309
+\c@part=\count310
+\c@section=\count311
+\c@subsection=\count312
+\c@subsubsection=\count313
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
+.sty
+\beamer@framebox=\box66
+\beamer@frametitlebox=\box67
+\beamer@zoombox=\box68
+\beamer@zoomcount=\count314
+\beamer@zoomframecount=\count315
+\beamer@frametextheight=\dimen271
+\c@subsectionslide=\count316
+\beamer@frametopskip=\skip51
+\beamer@framebottomskip=\skip52
+\beamer@frametopskipautobreak=\skip53
+\beamer@framebottomskipautobreak=\skip54
+\beamer@envbody=\toks29
+\framewidth=\dimen272
+\c@framenumber=\count317
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseverba
+tim.sty
+\beamer@verbatimfileout=\write4
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
+size.sty
+\beamer@splitbox=\box69
+\beamer@autobreakcount=\count318
+\beamer@autobreaklastheight=\dimen273
+\beamer@frametitletoks=\toks30
+\beamer@framesubtitletoks=\toks31
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseframe
+components.sty
+\beamer@footins=\box70
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasecolor
+.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenotes
+.sty
+\beamer@frameboxcopy=\box71
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetoc.s
+ty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetempl
+ates.sty
+\beamer@sbttoks=\toks32
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseauxte
+mplates.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaseboxes
+.sty
+\bmb@box=\box72
+\bmb@colorbox=\box73
+\bmb@boxwidth=\dimen274
+\bmb@boxheight=\dimen275
+\bmb@prevheight=\dimen276
+\bmb@temp=\dimen277
+\bmb@dima=\dimen278
+\bmb@dimb=\dimen279
+\bmb@prevheight=\dimen280
+)
+\beamer@blockheadheight=\dimen281
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbaselocal
+structure.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks33
+)
+\beamer@bibiconwidth=\skip55
+\c@figure=\count319
+\c@table=\count320
+\abovecaptionskip=\skip56
+\belowcaptionskip=\skip57
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasenavig
+ation.sty
+\beamer@section@min@dim=\dimen282
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheor
+ems.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen283
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen284
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count321
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count322
+\leftroot@=\count323
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count324
+\DOTSCASE@=\count325
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box74
+\strutbox@=\box75
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen285
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count326
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count327
+\dotsspace@=\muskip17
+\c@parentequation=\count328
+\dspbrk@lvl=\count329
+\tag@help=\toks35
+\row@=\count330
+\column@=\count331
+\maxfields@=\count332
+\andhelp@=\toks36
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
+\@envbody=\toks37
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks44
+)
+\c@theorem=\count333
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerbasetheme
+s.sty))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemedefa
+ult.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfonttheme
+default.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthem
+edefault.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthem
+edefault.sty
+\beamer@dima=\dimen292
+\beamer@dimb=\dimen293
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthem
+edefault.sty)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerthemeBoad
+illa.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthem
+erose.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerinnerthem
+erounded.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthem
+edolphin.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerouterthem
+einfolines.sty))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolorthem
+ewhale.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfonttheme
+serif.sty)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box76
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+ty
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex)
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count334
+\pgfplotmarksize=\dimen298
+)
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count335
+\tikznumberofchildren=\count336
+\tikznumberofcurrentchild=\count337
+\tikz@fig@count=\count338
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count339
+\pgfmatrixcurrentcolumn=\count340
+\pgf@matrix@numberofcolumns=\count341
+)
+\tikz@expandcount=\count342
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks47
+\verbatim@line=\toks48
+\verbatim@in@stream=\read3
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes
+\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box81
+\pgfnodeparttwobox=\box82
+\pgfnodepartthreebox=\box83
+\pgfnodepartfourbox=\box84
+\pgfnodeparttwentybox=\box85
+\pgfnodepartnineteenbox=\box86
+\pgfnodeparteighteenbox=\box87
+\pgfnodepartseventeenbox=\box88
+\pgfnodepartsixteenbox=\box89
+\pgfnodepartfifteenbox=\box90
+\pgfnodepartfourteenbox=\box91
+\pgfnodepartthirteenbox=\box92
+\pgfnodeparttwelvebox=\box93
+\pgfnodepartelevenbox=\box94
+\pgfnodeparttenbox=\box95
+\pgfnodepartninebox=\box96
+\pgfnodeparteightbox=\box97
+\pgfnodepartsevenbox=\box98
+\pgfnodepartsixbox=\box99
+\pgfnodepartfivebox=\box100
+)))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.code.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen307
+))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen308
+\pgfarrowlength=\dimen309
+\pgfarrowwidth=\dimen310
+\pgfarrowlinewidth=\dimen311
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+edecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen312
+\pgfdecoratedremainingdistance=\dimen313
+\pgfdecoratedinputsegmentcompleteddistance=\dimen314
+\pgfdecoratedinputsegmentremainingdistance=\dimen315
+\pgf@decorate@distancetomove=\dimen316
+\pgf@decorate@repeatstate=\count343
+\pgfdecorationsegmentamplitude=\dimen317
+\pgfdecorationsegmentlength=\dimen318
+)
+\tikz@lib@dec@box=\box101
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
+tions\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+\beamer@partstartframe=\count344
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count345
+\multirow@dima=\skip65
+\bigstrutjot=\dimen319
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.st
+y
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen320
+\ar@mcellbox=\box102
+\extrarowheight=\dimen321
+\NC@list=\toks49
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box103
+)
+\everycr=\toks50
+\minrowclearance=\skip68
+\rownum=\count346
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2022/01/05 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(inconsolata.sty
+Package: inconsolata 2019/05/17 v1.12
+
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
+)
+\XKV@depth=\count347
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\zifour@ocount=\count348
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvosym.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box104
+\UL@hyphenbox=\box105
+\UL@skip=\skip69
+\UL@hook=\toks53
+\UL@height=\dimen322
+\UL@pe=\count349
+\UL@pixel=\dimen323
+\ULC@box=\box106
+Package: ulem 2019/11/18
+\ULdepth=\dimen324
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/overpic\overpic.sty
+Package: overpic 2020/02/22 1.3 picture overlays (RN)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/eepic\epic.sty
+Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
+\@@multicnt=\count350
+\d@lta=\count351
+\@delta=\dimen325
+\@@delta=\dimen326
+\@gridcnt=\count352
+\@joinkind=\count353
+\@dotgap=\dimen327
+\@ddotgap=\dimen328
+\@x@diff=\count354
+\@y@diff=\count355
+\x@diff=\dimen329
+\y@diff=\dimen330
+\@dotbox=\box107
+\num@segments=\count356
+\num@segmentsi=\count357
+\@datafile=\read4
+)
+\OVP@box=\box108
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.sty
+Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.te
+x
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv)
+\pstFP@xs=\count358
+\pstFP@xia=\count359
+\pstFP@xib=\count360
+\pstFP@xfa=\count361
+\pstFP@xfb=\count362
+\pstFP@rega=\count363
+\pstFP@regb=\count364
+\pstFP@regs=\count365
+\pstFP@times=\count366
+)
+\psLoopIndex=\count367
+
+`PSTricks' v3.17  <2022/10/23> (tvz,hv)
+\pst@dima=\dimen331
+\pst@dimb=\dimen332
+\pst@dimc=\dimen333
+\pst@dimd=\dimen334
+\pst@dimg=\dimen335
+\pst@dimh=\dimen336
+\pst@dimm=\dimen337
+\pst@dimn=\dimen338
+\pst@dimo=\dimen339
+\pst@dimp=\dimen340
+\pst@hbox=\box109
+\pst@ibox=\box110
+\pst@boxg=\box111
+\pst@cnta=\count368
+\pst@cntb=\count369
+\pst@cntc=\count370
+\pst@cntd=\count371
+\pst@cntg=\count372
+\pst@cnth=\count373
+\pst@cntm=\count374
+\pst@cntn=\count375
+\pst@cnto=\count376
+\pst@cntp=\count377
+\@zero=\count378
+\pst@toks=\toks54
+--- We are running latex or xelatex ---
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.co
+n)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-co
+lor.tex)
+\psunit=\dimen341
+\psxunit=\dimen342
+\psyunit=\dimen343
+\pst@C@@rType=\count379
+\pslinewidth=\dimen344
+\psk@startLW=\dimen345
+\psk@endLW=\dimen346
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-ar
+rows.tex
+\pshooklength=\dimen347
+\pshookwidth=\dimen348
+)
+\pst@customdefs=\toks55
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks-do
+ts.tex)
+\pslinearc=\dimen349
+\pst@symbolStep=\dimen350
+\pst@symbolWidth=\dimen351
+\pst@symbolLinewidth=\dimen352
+\everypsbox=\toks56
+\psframesep=\dimen353
+\pslabelsep=\dimen354
+\sh@wgridXunit=\dimen355
+\sh@wgridYunit=\dimen356
+\pst@shift=\dimen357
+\ps@imagectr=\count380
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks.co
+n))
+File: pstricks.tex 2022/10/23 v3.17 `PSTricks' (tvz,hv)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.tex
+`pst-fp' v0.06, 2020/11/20 (hv))
+File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen358
+\captionmargin=\dimen359
+\caption@leftmargin=\dimen360
+\caption@rightmargin=\dimen361
+\caption@width=\dimen362
+\caption@indent=\dimen363
+\caption@parindent=\dimen364
+\caption@hangindent=\dimen365
+Package caption Info: beamer document class detected.
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption-beamer
+.sto
+File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to th
+e beamer document classes (AR)
+))
+\c@caption@flags=\count381
+\c@continuedfloat=\count382
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
+\c@KVtest=\count383
+\sf@farskip=\skip70
+\sf@captopadj=\dimen366
+\sf@capskip=\skip71
+\sf@nearskip=\skip72
+\c@subfigure=\count384
+\c@subfigure@save=\count385
+\c@depth=\count386
+\c@subtable=\count387
+\c@subtable@save=\count388
+\sf@top=\skip73
+\sf@bottom=\skip74
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/animate\animate.sty
+Package: animate 2022/09/15 PDF & SVG animations from files and inline graphics
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count389
+\calc@Bcount=\count390
+\calc@Adimen=\dimen367
+\calc@Bdimen=\dimen368
+\calc@Askip=\skip75
+\calc@Bskip=\skip76
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count391
+\calc@Cskip=\skip77
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/media9\pdfbase.sty
+Package: pdfbase 2022/08/04 v0.55 driver independent access to low-level PDF fe
+atures
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count392
+\l__pdf_internal_box=\box112
+)
+\g_pbs_page_int=\count393
+\g_pbs_oc_int=\count394
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count395
+Package zref Info: New property: abspage on input line 65.
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/ocgx2\ocgbase.sty
+Package: ocgbase 2022/08/04 v0.22 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count396
+)
+\@anim@box=\box113
+\@anim@measbox=\box114
+\@anim@tmpdima=\dimen369
+\@anim@tmpdimb=\dimen370
+\@anim@num=\count397
+\@anim@curframe=\count398
+\@anim@curframe@zb=\count399
+\@anim@resizeflags=\count400
+\@anim@skipfram=\count401
+\@anim@mulframecnt=\count402
+\@anim@@tmlnfile=\read5
+\@anim@tmpcnt=\count403
+\c@@anim@ltxcnt=\count404
+\@anim@curlayer=\count405
+\@anim@lineno=\count406
+\@anim@curfield=\count407
+\@anim@@resizeflags=\count408
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip78
+\fb@frw=\dimen371
+\fb@frh=\dimen372
+\FrameRule=\dimen373
+\FrameSep=\dimen374
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/tabto-ltx\tabto.sty
+Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
+\CurrentLineWidth=\dimen375
+\TabPrevPos=\dimen376
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks57
+\inpenc@posthook=\toks58
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup9
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/natbib\bibentry.sty
+Package: bibentry 2007/10/30 1.5 (PWD)
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen377
+\lightrulewidth=\dimen378
+\cmidrulewidth=\dimen379
+\belowrulesep=\dimen380
+\belowbottomsep=\dimen381
+\aboverulesep=\dimen382
+\abovetopsep=\dimen383
+\cmidrulesep=\dimen384
+\cmidrulekern=\dimen385
+\defaultaddspace=\dimen386
+\@cmidla=\count409
+\@cmidlb=\count410
+\@aboverulesep=\dimen387
+\@belowrulesep=\dimen388
+\@thisruleclass=\count411
+\@lastruleclass=\count412
+\@thisrulewidth=\dimen389
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2022/06/06 4.5 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count413
+\FV@InFile=\read6
+\FV@TabBox=\box115
+\c@FancyVerbLine=\count414
+\FV@StepNumber=\count415
+\FV@OutFile=\write5
+) (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip79
+\bibsep=\skip80
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count416
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count417
+\lst@gtempboxa=\box116
+\lst@token=\toks59
+\lst@length=\count418
+\lst@currlwidth=\dimen390
+\lst@column=\count419
+\lst@pos=\count420
+\lst@lostspace=\dimen391
+\lst@width=\dimen392
+\lst@newlines=\count421
+\lst@lineno=\count422
+\lst@maxwidth=\dimen393
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count423
+\lst@skipnumbers=\count424
+\lst@framebox=\box117
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package hyperref Info: Option `colorlinks' set `true' on input line 225.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 240.
+
+(talks.aux (Preliminaries.aux) (uncertainty-analysis/uncertainty-analysis.aux))
+\openout1 = `talks.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 242.
+LaTeX Font Info:    ... okay on input line 242.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape includehead includefoot 
+* h-part:(L,W,R)=(9.24994pt, 345.69548pt, 9.24994pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=345.69548pt
+* \textheight=244.6939pt
+* \oddsidemargin=-63.02005pt
+* \evensidemargin=-63.02005pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=9.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count425
+\scratchdimen=\dimen394
+\scratchbox=\box118
+\nofMPsegments=\count426
+\nofMParguments=\count427
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count428
+\MPscratchDim=\dimen395
+\MPnumerator=\count429
+\makeMPintoPDFobject=\count430
+\everyMPtoPDFconversion=\toks61
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring ON on input line 242.
+ (talks.out) (talks.out)
+\@outlinefile=\write6
+\openout6 = `talks.out'.
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+bibliography-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+environment-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+months-dictionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+numbers-dictionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-
+theorem-dictionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count431
+
+(talks.nav)
+Overfull \hbox (159.24733pt too wide) in paragraph at lines 242--242
+ [][]  
+ []
+
+
+Overfull \hbox (10.51988pt too wide) in paragraph at lines 242--242
+ [][][][]  
+ []
+
+
+Overfull \hbox (159.24733pt too wide) has occurred while \output is active
+ [][]  
+ []
+
+
+Overfull \hbox (10.51988pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[1
+Non-PDF special ignored!
+<special> header=pstricks.pro
+Non-PDF special ignored!
+<special> header=pst-algparser.pro
+Non-PDF special ignored!
+<special> header=pst-tools.pro
+Non-PDF special ignored!
+<special> header=pst-dots.pro
+
+Non-PDF special ignored!
+<special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
+Non-PDF special ignored!
+<special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
+Non-PDF special ignored!
+<special> ps:0.8 setlinewidth 0 setgray
+{C:/Users/Nathan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+pdfTeX warning (ext4): destination with the same identifier (name{Outline1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.270 \part[Preliminaries]{Preliminaries}
+                                          \frame{\partpage}
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[2
+
+]
+\openout2 = `Preliminaries.aux'.
+
+ (Preliminaries.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
+.
+
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+<ucl_building.jpeg, id=67, 1425.325pt x 891.33pt>
+File: ucl_building.jpeg Graphic file (type jpg)
+<use ucl_building.jpeg>
+Package pdftex.def Info: ucl_building.jpeg  used on input line 16.
+(pdftex.def)             Requested size: 172.88025pt x 108.12054pt.
+
+Overfull \hbox (30.61647pt too wide) in paragraph at lines 16--16
+[][] 
+ []
+
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 16--16
+[][]  
+ []
+
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[3
+
+
+ <./ucl_building.jpeg>]
+<Lecture.jpg, id=78, 501.875pt x 335.2525pt>
+File: Lecture.jpg Graphic file (type jpg)
+<use Lecture.jpg>
+Package pdftex.def Info: Lecture.jpg  used on input line 64.
+(pdftex.def)             Requested size: 161.85153pt x 108.12054pt.
+
+Overfull \hbox (19.58775pt too wide) in paragraph at lines 64--64
+[] 
+ []
+
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 64--64
+[][]  
+ []
+
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[4
+
+ <./Lecture.jpg>]
+<Practical.jpg, id=90, 357.58594pt x 220.57407pt>
+File: Practical.jpg Graphic file (type jpg)
+<use Practical.jpg>
+Package pdftex.def Info: Practical.jpg  used on input line 64.
+(pdftex.def)             Requested size: 161.44144pt x 99.58464pt.
+
+Overfull \hbox (19.17766pt too wide) in paragraph at lines 64--64
+[] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 6
+4.
+(C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/inconsolata\ot1zi4.fd
+File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 8.0pt on input line 64.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 64--64
+[][]  
+ []
+
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[5
+
+ <./Practical.jpg>]
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[6
+
+]
+<bcea_book.jpg, id=108, 331.2375pt x 501.875pt>
+File: bcea_book.jpg Graphic file (type jpg)
+<use bcea_book.jpg>
+Package pdftex.def Info: bcea_book.jpg  used on input line 98.
+(pdftex.def)             Requested size: 71.35619pt x 108.12054pt.
+<bmhe_book.jpg, id=109, 305.14pt x 500.87125pt>
+File: bmhe_book.jpg Graphic file (type jpg)
+<use bmhe_book.jpg>
+Package pdftex.def Info: bmhe_book.jpg  used on input line 98.
+(pdftex.def)             Requested size: 65.8692pt x 108.12054pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 98--98
+[][]  
+ []
+
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[7
+
+ <./bcea_book.jpg> <./bmhe_book.jpg>])
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[8
+
+
+
+]
+\openout2 = `uncertainty-analysis/uncertainty-analysis.aux'.
+
+ (uncertainty-analysis/uncertainty-analysis.tex
+
+LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
+(Font)              using `OT1/zi4/m/n' instead on input line 17.
+
+LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
+(Font)              scaled to size 7.0pt on input line 17.
+LaTeX Font Info:    Font shape `OT1/zi4/m/it' will be
+(Font)              scaled to size 7.0pt on input line 17.
+<UCL.jpg, id=143, 173.6889pt x 50.3481pt>
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 17.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[9
+
+
+ <./UCL.jpg>]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 31.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[10
+
+]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 45.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[11
+
+]
+<R/marginal-distns.png, id=187, 150.5625pt x 481.8pt>
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+<1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf, id=188, 31
+6.18124pt x 240.9pt>
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+<1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf, id=189, 31
+6.18124pt x 240.9pt>
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+<1.introduction-to-health-economic-evaluations/figs/pi0_grid.png, id=190, 151.9
+86pt x 142.788pt>
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 344.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+<1.introduction-to-health-economic-evaluations/figs/rho.pdf, id=192, 202.7575pt
+ x 179.67125pt>
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+<1.introduction-to-health-economic-evaluations/figs/gamma.pdf, id=193, 202.7575
+pt x 179.67125pt>
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+<1.introduction-to-health-economic-evaluations/figs/chosp.pdf, id=194, 191.7162
+5pt x 179.67125pt>
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+<1.introduction-to-health-economic-evaluations/figs/pi0.pdf, id=195, 202.7575pt
+ x 179.67125pt>
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 344.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[12
+
+ <./R/marginal-distns.png> <./1.introduction-to-health-economic-evaluations/fig
+s/ModelGraph2.pdf> <./1.introduction-to-health-economic-evaluations/figs/ModelG
+raph4.pdf>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 344.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 344.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[13
+
+ <./1.introduction-to-health-economic-evaluations/figs/pi0_grid.png> <./1.intro
+duction-to-health-economic-evaluations/figs/rho.pdf> <./1.introduction-to-healt
+h-economic-evaluations/figs/gamma.pdf> <./1.introduction-to-health-economic-eva
+luations/figs/chosp.pdf>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 344.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 344.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+ <./1.introduction-to-health-economic-evaluations/figs/pi0.pdf>]
+File: R/marginal-distns.png Graphic file (type png)
+<use R/marginal-distns.png>
+Package pdftex.def Info: R/marginal-distns.png  used on input line 344.
+(pdftex.def)             Requested size: 55.70724pt x 178.2632pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png Graphic f
+ile (type png)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0_grid.png>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+_grid.png  used on input line 344.
+(pdftex.def)             Requested size: 53.19588pt x 49.97653pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: 1.introduction-to-health-economic-evaluations/figs/pi0.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/pi0.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/pi0
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/rho.pdf Graphic file (
+type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/rho.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/rho
+.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/gamma.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/gamma.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/gam
+ma.pdf  used on input line 344.
+(pdftex.def)             Requested size: 54.74525pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/chosp.pdf Graphic file
+ (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/chosp.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/cho
+sp.pdf  used on input line 344.
+(pdftex.def)             Requested size: 51.76407pt x 48.51187pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph2.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph2.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+File: 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf Graphi
+c file (type pdf)
+<use 1.introduction-to-health-economic-evaluations/figs/ModelGraph4.pdf>
+Package pdftex.def Info: 1.introduction-to-health-economic-evaluations/figs/Mod
+elGraph4.pdf  used on input line 344.
+(pdftex.def)             Requested size: 116.98521pt x 89.13159pt.
+
+Overfull \hbox (17.5112pt too wide) in paragraph at lines 344--344
+[][] 
+ []
+
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 344.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[15
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+370.
+ (C:\Users\Nathan\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 370.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[16
+
+]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 370.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[17
+
+]
+File: UCL.jpg Graphic file (type jpg)
+<use UCL.jpg>
+Package pdftex.def Info: UCL.jpg  used on input line 370.
+(pdftex.def)             Requested size: 36.31673pt x 10.52737pt.
+
+Overfull \hbox (4.44588pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[18
+
+])
+\tf@nav=\write7
+\openout7 = `talks.nav'.
+
+\tf@toc=\write8
+\openout8 = `talks.toc'.
+
+\tf@snm=\write9
+\openout9 = `talks.snm'.
+
+ (talks.aux (Preliminaries.aux)
+(uncertainty-analysis/uncertainty-analysis.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `talks.out' has not changed.
+(rerunfilecheck)             Checksum: 6F3D5EC7C16689A166517B4940ABC012;250.
+ ) 
+Here is how much of TeX's memory you used:
+ 36819 strings out of 475285
+ 761320 string characters out of 2773647
+ 1132428 words of memory out of 3000000
+ 57442 multiletter control sequences out of 15000+600000
+ 486499 words of font info for 92 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 128i,25n,133p,1798b,952s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Nathan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcs
+s0800.pk>{C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/inconso
+lata/i4-ot1-0.enc}<C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/inconsolata/Inconsolata-zi4r.pfb><C:/Users/Nathan/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Nathan/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Nathan/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nath
+an/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/U
+sers/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/c
+mmib8.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr5.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Nathan/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Nathan/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Nathan/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/User
+s/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb
+><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmssbx10.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmssi10.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Users/Nathan/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Nathan/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Nathan/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C
+:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbol
+s/msam5.pfb><C:/Users/Nathan/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msam7.pfb>
+Output written on talks.pdf (18 pages, 1063511 bytes).
+PDF statistics:
+ 430 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+

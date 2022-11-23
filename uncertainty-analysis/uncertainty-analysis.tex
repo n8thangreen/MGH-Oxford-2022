@@ -3,7 +3,76 @@
 %%%%\setbeamerfont{itemize/enumerate subsubbody}{size*={7}{9}}
 
 \frame{%
-\frametitle{Summary}
+\frametitle{Handling uncertainty in economic evaluations}
+\begin{itemize}
+\item Population uncertainty: Sub-group analysis
+\item Parameter uncertainty: Sensitivity analysis
+\item Structural uncertainty: Sensitivity analysis
+\item Collect more data
+\item Sensitivity analysis (SA)
+\item Deterministic sensitivity analysis
+\begin{itemize}
+	\item One-way SA
+	\item Two-way SA
+	\item Scenario analysis (best or worst case, what if..)
+\end{itemize}
+\item Probabilistic sensitivity analysis (PSA)
+\begin{itemize}
+	\item Monte Carlo simulation
+\end{itemize}
+\item Cost-effectiveness acceptability curves (CEAC)
+\end{itemize}
+
+}
+
+\frame{%
+\frametitle{How robust are health economic evaluations}
+\begin{itemize}
+\item Do limitations in either the quality or availability of evidence affect the recommended decision?
+\item If the decision is not altered despite ‘reasonable’ variations in key assumptions/parameters, then the analysis can be considered to be ‘robust’
+\item Two types of uncertainty:
+\begin{itemize}
+	\item Structural (is the model design correct?)
+	\item Parameter (are the values correct?)
+\end{itemize}
+\item In economic evaluation, some form of sensitivity analysis is frequently carried out in order to allow for uncertainty
+\item This uncertainty may be present in the evaluation for several reasons:
+\begin{itemize}
+	\item Data are unavailable and assumptions are necessary
+	\item Available but inaccurate
+\end{itemize}
+\item In this type of analysis the	values recorded for important parameters are varied, usually one at a time, in order to determine whether the results are sensitive to the assumptions made
+\end{itemize}
+}
+
+\frame{%
+\frametitle{Uncertainty in economic evaluations}
+\begin{itemize}
+\item Structural: scenario analysis
+\item Re-run the analysis with alternate assumptions and model structures
+\item Parameter: sensitivity analysis (SA)
+\item Re-run the analysis with different parameter values
+\item Type of sensitivity analysis:
+\begin{itemize}
+	\item One-way SA
+	\item Multi-way SA
+	\item Extreme values SA
+	\item Probabilistic SA
+\end{itemize}
+\end{itemize}
+}
+
+\frame{%
+\frametitle{Types of sensitivity analysis}
+\begin{itemize}
+\item Simple sensitivity analysis entails varying one or more of the components of an evaluation to see how it affects the results
+\item  Probabilistic sensitivity analysis assigns ranges and distribution to  variables and computer programs  are used to select values at  random from each range and to record the results
+\item By using these different methods of sensitivity analysis it is possible to show whether the results of a particular study	over a range of  assumptions or hinge on the accuracy of particular assumptions
+\end{itemize}
+}
+
+\frame{%
+\frametitle{Uncertainty in economic evaluations}
 \begin{itemize}
 \item xxx
 \end{itemize}
@@ -17,7 +86,7 @@
 }
 
 \frame{%
-\frametitle{Summary}
+\frametitle{Uncertainty in economic evaluations}
 \begin{itemize}
 \item xxx
 \end{itemize}
@@ -31,7 +100,7 @@
 }
 
 \frame{%
-\frametitle{Summary}
+\frametitle{Uncertainty in economic evaluations}
 \begin{itemize}
 \item xxx
 \end{itemize}
@@ -43,74 +112,51 @@
 \end{block}
 
 }
-
 
 \frame{
-\frametitle{4.\ Uncertainty analysis
-\hspace{0pt plus 1 filll} \small $\left[p(\bm\theta\mid e,c)\right.$ vs $\left. g_i(\theta_i)\right]$}
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-means}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-y-min}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-y-max}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-x-min}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-x-max}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/fixed-all}\end{center}
+}
+
+\frame{
+\frametitle{A two input example}
+\begin{center}\includegraphics[scale=.6]{R/full-psa}\end{center}
+}
+
+
+% uncertainty propogation
+\frame{
+\frametitle{4.\ Uncertainty analysis}
 \begin{overprint}
 %%%\vspace{7pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onslide<1|handout:0>
-\fontsize{7}{8}\selectfont
-\begin{tabular}{ccc}
-\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
-\begin{minipage}[l]{2.5cm}
-\begin{center}\includegraphics[scale=.37]{R/marginal-distns}\end{center}
-\end{minipage}
-&
-\begin{minipage}[l]{5cm}
-\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
-\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
-
-\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
-\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
-\end{minipage}
-&
-\begin{minipage}[l]{4cm}
-\begin{tikzpicture}
-\draw(2.5,2) node[align=center,draw=none]{
-\begin{tabular}{cc}
-\hline
-\multicolumn{2}{c}{Old chemotherapy} \\
-\hline
-Benefits & Costs \\
-\hline 
- &  \\
- &  \\
- &  \\
- &  \\
-\hline
-\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
-\hline
-\end{tabular}
-};
-
-\draw(2.5,-1) node[align=center,draw=none]{
-\begin{tabular}{cc}
-\hline
-\multicolumn{2}{c}{New chemotherapy} \\
-\hline
-Benefits & Costs \\
-\hline 
- &  \\
- &  \\
- &  \\
- &  \\
-\hline
-\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
-\hline
-\end{tabular}
-};
-
-\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
-\end{tikzpicture}
-\end{minipage}
-\end{tabular}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\onslide<2|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
@@ -169,7 +215,7 @@ Benefits & Costs \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\onslide<3|handout:0>
+\onslide<2|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
@@ -227,7 +273,7 @@ Benefits & Costs \\
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\onslide<4|handout:0>
+\onslide<3|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
@@ -284,39 +330,130 @@ Benefits & Costs \\
 \end{minipage}
 \end{tabular}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<4|handout:0>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/max-min-gamma}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
+\begin{tikzpicture}
+\draw(2.5,2) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-1) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
+
+\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
+\end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onslide<5|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
 \begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/max-min-cost}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{5cm}
+\begin{center}\red{Old chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph2}\end{center}
+
+\begin{center}\red{New chemotherapy}\black\end{center}\vspace{-.5cm}
+\begin{center}\includegraphics[scale=.37]{1.introduction-to-health-economic-evaluations/figs/ModelGraph4}\end{center}
+\end{minipage}
+&
+\begin{minipage}[l]{4cm}
 \begin{tikzpicture}
-\draw(0,5) node{\includegraphics[scale=.35]{1.introduction-to-health-economic-evaluations/figs/pi0_grid}};
-%\draw(0,5) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0}};
-\draw(0,3) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho}};
-\draw(0,1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma}};
-\draw(0,-1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp}};
+\draw(2.5,2) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{Old chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
 
-\draw(0,5) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](1){$\pi_0$};
-\draw(0.25,3) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](2){$\rho$};
-\draw(.1,1.2) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](3){$\gamma$};
-\draw(.5,-1.1) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](4){$c^{\rm{hosp}}$};
+\draw(2.5,-1) node[align=center,draw=none]{
+\begin{tabular}{cc}
+\hline
+\multicolumn{2}{c}{New chemotherapy} \\
+\hline
+Benefits & Costs \\
+\hline 
+ &  \\
+ &  \\
+ &  \\
+ &  \\
+\hline
+\textbf{\white 743.1} & \textbf{\white 656\,644.6} \\
+\hline
+\end{tabular}
+};
 
-
-\draw(-0.7, 4.4) node[align=center,draw=none,color=black,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-0.4, 4.4) node[align=center,draw=none,color=black,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(0, 4.4) node[align=center,draw=none,color=black,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(0.6, 4.4) node[align=center,draw=none,color=black,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-
-\draw(-0.6, 2.4) node[align=center,draw=none,color=gray,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-0.1, 2.4) node[align=center,draw=none,color=black,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(0.3, 2.4) node[align=center,draw=none,color=gray,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-
-\draw(0, 4.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.52,2.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.2,.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.6,-1.6) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
+\draw(2.5,-2.7) node(3){\white $\displaystyle \mbox{ICER} = \frac{\mbox{20\,000}}{\mbox{1QALY}}$\black};
 \end{tikzpicture}
+\end{minipage}
+\end{tabular}
+
+% PSA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<6|handout:0>
+\fontsize{7}{8}\selectfont
+\begin{tabular}{ccc}
+\textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
+\begin{minipage}[l]{2.5cm}
+\begin{center}\includegraphics[scale=.37]{R/psa-1}\end{center}
 \end{minipage}
 &
 \begin{minipage}[l]{5cm}
@@ -372,25 +509,12 @@ Benefits & Costs \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\onslide<6|handout:0>
+\onslide<7|handout:0>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
 \begin{minipage}[l]{2.5cm}
-\begin{tikzpicture}
-\draw(0,5) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0}};
-\draw(0,3) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho}};
-\draw(0,1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma}};
-\draw(0,-1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp}};
-\draw(0,5) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](1){$\pi_0$};
-\draw(0.25,3) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](2){$\rho$};
-\draw(.1,1.2) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](3){$\gamma$};
-\draw(.5,-1.1) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](4){$c^{\rm{hosp}}$};
-\draw(.15,4.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.32,2.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(.2,.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.1,-1.6) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\end{tikzpicture}
+\begin{center}\includegraphics[scale=.37]{R/psa-2}\end{center}
 \end{minipage}
 &
 \begin{minipage}[l]{5cm}
@@ -444,25 +568,13 @@ Benefits & Costs \\
 \end{minipage}
 \end{tabular}
 
-\onslide<7|handout:1>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\onslide<8|handout:1>
 \fontsize{7}{8}\selectfont
 \begin{tabular}{ccc}
 \textbf{\blue Parameters} & \textbf{\blue Model structure} & \textbf{\blue Decision analysis} \\
 \begin{minipage}[l]{2.5cm}
-\begin{tikzpicture}
-\draw(0,5) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/pi0}};
-\draw(0,3) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/rho}};
-\draw(0,1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/gamma}};
-\draw(0,-1) node{\includegraphics[scale=.27]{1.introduction-to-health-economic-evaluations/figs/chosp}};
-\draw(0,5) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](1){$\pi_0$};
-\draw(0.25,3) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](2){$\rho$};
-\draw(.1,1.2) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](3){$\gamma$};
-\draw(.5,-1.1) node[align=center,draw=none,font=\fontsize{6}{7}\selectfont](4){$c^{\rm{hosp}}$};
-\draw(.25,4.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(.12,2.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(-.0,.4) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\draw(.04,-1.6) node[align=center,draw=none,color=red,font=\fontsize{7}{7}\selectfont]{\textbf{x}};
-\end{tikzpicture}
+\begin{center}\includegraphics[scale=.37]{R/psa-3}\end{center}
 \end{minipage}
 &
 \begin{minipage}[l]{5cm}

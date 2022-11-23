@@ -1,5 +1,6 @@
 
 # sensitivity analysis plots
+# bivariate normal distribution
 # for presentation
 # Oxford University 2022
 
@@ -37,7 +38,7 @@ p4 <- p +
   
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_means.png")
+ggsave(plot = p5, filename = "fixed-means.png")
 
 ################
 # max and min
@@ -56,7 +57,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_y_min.png")
+ggsave(plot = p5, filename = "fixed-y-min.png")
 
 p4 <- p +
   geom_segment(aes(x = -1.5, y = 3.3, xend = -1.5, yend = 0), col = "red", lty = 2) +
@@ -69,7 +70,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_y_mean.png")
+ggsave(plot = p5, filename = "fixed-y-mean.png")
 
 p4 <- p +
   geom_segment(aes(x = -1.5, y = 3.3, xend = -1.5, yend = 0), col = "red", lty = 2) +
@@ -96,7 +97,7 @@ p4 <- p +
   
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_x_mean.png")
+ggsave(plot = p5, filename = "fixed-x-max.png")
 
 p4 <- p +
   geom_segment(aes(x = 0, y = 3.3, xend = 0, yend = -1.5), col = "red", linewidth = 1.5) +
@@ -109,7 +110,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_x_min.png")
+ggsave(plot = p5, filename = "fixed-x-min.png")
 
 p4 <- p +
   geom_segment(aes(x = 0, y = 3.3, xend = 0, yend = -1.5), col = "red", linewidth = 1.5) +
@@ -122,7 +123,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_x_max.png")
+ggsave(plot = p5, filename = "fixed-x-mean.png")
 
 # all points
 
@@ -135,7 +136,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "fixed_all.png")
+ggsave(plot = p5, filename = "fixed-all.png")
 
 # one-way sample points
 
@@ -153,7 +154,7 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "oneway_x.png")
+ggsave(plot = p5, filename = "oneway-x.png")
 
 # full PSA
 
@@ -164,4 +165,4 @@ p4 <- p +
 
 p5 <- ggMarginal(p4, type = "density")
 
-ggsave(plot = p5, filename = "full_psa.png")
+ggsave(plot = p5, filename = "full-psa.png")

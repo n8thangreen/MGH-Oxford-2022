@@ -2,7 +2,7 @@
 
 ## Lecture slides
 
-* [Contribution guidelines for this project](slides/talk.pdf)
+* [Repo](https://github.com/n8thangreen/MSc-Oxford-2022)
 
 ## Practicals
 
@@ -11,6 +11,6 @@
   * [Folder](practicals/)
 
 * Solutions
-  * [decision trees](practicals/decision-trees/Solutions.pdf]
-  * [Markov models](practicals/markov-models/Solutions.pdf]
+  * [decision trees](practicals/decision-trees/Solutions.pdf)
+  * [Markov models](practicals/markov-models/Solutions.pdf)
   

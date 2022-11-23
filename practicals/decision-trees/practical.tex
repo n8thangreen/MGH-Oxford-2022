@@ -1,0 +1,125 @@
+\chapter{Decision trees}
+This is a gentle introduction to implementing decision trees for health economics in R.
+This is meant as an early practical to familarise with using R and some of the basic concepts.
+
+\section{Running and analysing deterministic results}
+First run the simple depression model stored in file \texttt{practical.R} in the decision tree folder. Ensure you understand each line of this file.
+Recall that the model equations are
+
+\begin{verbatim}
+costs <- c.treat+p.rec*(1-p.rel)*c.rec+p.rec*p.rel*c.rel+(1-p.rec)*c.norec
+effects <- p.rec*(1-p.rel)*q.rec+p.rec*p.rel*q.rel+(1-p.rec)*q.norec
+\end{verbatim}
+
+Look at the values of the matrix parameters (e.g. \texttt{p.rel}, \texttt{c.treat}) going into this equation.
+
+\begin{itemize}
+\item What is the Net Benefit?
+\item Calculate the incremental costs and effects.
+\item What is the ICER?
+\end{itemize}
+
+
+\section{Running and analysing probabilistic results}
+First run the probabilistic depression model stored in file \texttt{practical\_probs.R} in the decision tree folder. Ensure you understand each line of this file.
+
+Look at the values of the matrix parameters (e.g. \texttt{p.rel}, \texttt{c.treat}) going into this equation using the \texttt{colMeans()} function.
+This takes a mean of the columns matrices; for example, \texttt{colMeans(p.rel)} will give the mean probability of relapse on each of the three treatment options.
+Look at the mean of vectors (e.g. \texttt{c.rec, c.rel}) using the \texttt{mean()} function.
+A quick way to check if a data structure is a matrix or vector is to use \texttt{dim()}, the dimensions of a matrix, as this will be \texttt{NULL} for a vector.
+
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+
+\begin{itemize}
+
+\item Can you tell which treatment has the highest average probability of recovery or lowest probability of relapse?
+\item Of cost of no recovery, relapse, and recovery, which has the highest mean?
+\item Of QALY associated with no recovery, relapse, and recovery, which has the highest mean?
+
+Now that you understand the inputs to the costs and effects, use the \texttt{colMeans()} function to find the treatment with lowest costs and highest effects.
+The net benefit at £20,000 is defined as
+
+%\begin{verbatim}
+\texttt{net.benefit <- 20000*effects - costs}
+%\end{verbatim}
+
+Note that this multiplies 20000 by all the elements of the effects matrix and subtracts the corresponding elements of the costs matrix.
+
+\item Which intervention has the highest mean net benefit and should be recommended for treatment of depression?
+\end{itemize}
+    }%
+}
+
+%
+\section{Using BCEA to compare depression treatment strategies.}
+
+We will now use the \texttt{BCEA} package to analyse the effects and costs matrices in\texttt{depression\_psa.RData}.
+This will contrast the difficulty of simply comparing mean costs, effects, and net benefits (exercise 1) with a fully Bayesian and probabilistic interpretation of the results.
+First load the \texttt{BCEA} package using
+
+\begin{verbatim}
+library(BCEA)
+\end{verbatim}
+
+If \texttt{BCEA} has not yet been installed you’ll need to call \texttt{install.packages(“BCEA”)} first.
+
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+
+\begin{itemize}
+\item First use the \texttt{bcea()} function to generate a bcea object summarising the costs and effects
+Use the options \texttt{ref=1} to specify that “no treatment” is the reference and interventions=t.names to specify the appropriate names of the interventions.
+
+\item Apply \texttt{summary()} to the object created by \texttt{bcea()} in part (a) above.
+Use the option \texttt{wtp=20000} so that the willingness-to-pay for the net benefit is £20,000 (default in \texttt{BCEA} is £25,000)
+This gives comparisons of CBT and antidepressants to no treatment.
+The “EIB” is expected incremental benefit at the \texttt{wtp=20000}, the “CEAC” (cost-effectiveness acceptability curve) is the probability that the reference of “no treatment” has highest net benefit (most cost-effective) at the specified willingness-to-pay, and the ICER is the incremental cost-effectiveness ratio. The last of these can be compared with the standard willingness-to-pay threshold of £20,000. On these measures, how do CBT and antidepressants compare to no treatment?
+
+\item Now apply \texttt{bcea()} and \texttt{summary()} to compare the CBT and antidepressants option.
+To do this, first use \texttt{bcea()} but with \texttt{ref=2}, giving comparisons relative to CBT.
+Now use \texttt{summary()} to get the EIB and CEAC of antidepressants relative to CBT. Which option would be recommended at a willingness-to-pay threshold of £20,000?
+Note that the ICER is difficult to interpret due to negative incremental costs, so only focus on EIB and CEAC.
+
+\item As there are three decision options, it may be better to compare them simultaneously, rather than doing the pairwise comparisons of (b) and (c).
+Pass the \texttt{bcea} object created in part (a) to the \texttt{mulit.ce()} function and store the result.
+Now use \texttt{ceac.plot()} on the output of \texttt{multi.ce()}. This gives the probability that each of the three options has the highest net benefit for a range of willingness-to-pay thresholds.
+Which treatment has the highest probability of being most cost-effective at the £20,000 threshold?
+\end{itemize}
+}}
+
+%
+\chapter{A decision tree deterministic sensitivity analysis}
+This section demonstrates a part of a full deterministic sensitivity analysis over all input parameters of the decision tree model.
+We will focus on the 2nd treatment for simplicity but the same step can be carried-out for the other treatments and outputs used in post processing steps such as tornado plots.
+
+
+\section{Set-up}
+First, open the script stored in file \texttt{practical\_sa.R} in the decision tree folder. Ensure you understand each line of this file.
+This practical is similar to the first practical above except now rather than explictly defining the parameter values inside of the R script such as the costs or probabilities for each treatment, we now read then in from an external file. This allows us more flexibility and separates the input data part of the analysis from the actual computation part.
+This is especially beneficial when these get large and harder to manage as a single object.
+
+So, read in the set of input values contained in \texttt{det\_sa\_inputs.csv}. You can then view it insdie of R. Alternatively, you could open this file externally, in something like Microsoft Excel and view and edit there, which is what I did originally. This is good if you're working with collaborators or people who are too comfortable with using R.
+\\
+\\
+\texttt{det\_sa\_inputs.csv} has one row for each  model run, i.e. set of input values, and each column corresponds to one of the parameters.
+You can arrange these however you like but in this case I have put the scenario with all mean values first and then changed each parameter one at a time from left to right - maximum value first and then minimum value. Thus, this create a matrix where the off-diagonal values are fixed at the means.
+
+
+\section{Looping through scenarios}
+The main part of the script is the for loop over scenarios. The cost and effect equations should look familiar from the previous practical but now the values use in these equations are taken from the \texttt{inputs} matrix.
+\\
+\\
+We use a small trick of using the \texttt{with()} function to wrap around the equations. This allows us to reference the column of the matrix without having to write \texttt{scenario\$p.rec} etc every time, which make the code easier to read and less errror prone.
+
+\section{Post-processing}
+For post processing, we calculate the Net Benefit for all of the calculated scenarios and append this to the result object.
+
+We also plot a simple tornado plot using the \texttt{geom\_pointrange()} fro the \texttt{ggplot2} package. This is a quick way of viewing the output but for publications we would have to do a bit more cosmetic work.
+
+\begin{itemize}
+\item Change some of the input values in the .csv file and see how this changes the output.
+\item Repeat the analysis for the 3rd treatment.
+\end{itemize}
+
+%%%%\end{document}

@@ -1,0 +1,38 @@
+\chapter{A (too short) introduction to R}
+
+This is a very brief introduction to \R (which can be downloaded from the website \texttt{www.r-project.org}) and its capabilities. It will be extremely focussed on the characteristics that are instrumental to do health economic evaluations using a combination of \R, \bugs and some useful packages (such as \bcea). Thus it is by no means exhaustive!
+
+When you open the \R terminal, you are presented with the possibility of typing commands. You may want to open a text editor (e.g. the simple one built into the R Windows interface) in which you can type directly these commands, and save them to a script for future use. Another possibility is to use \R from within a more sophisticated ``integrated development environment'', such as \texttt{RStudio} (\texttt{www.rstudio.com}), which has many more features than the basic Windows interface.
+
+In any case, \R is a very powerful tool; more importantly, it is free and you can find a wealth of documentation on the internet. \R has a set of built-in commands, which you can use for basic operations. However, there are also many add-on packages containing sets of functions designed to perform specific statistical tasks. These packages can be installed to \textit{your} \R by typing the command
+\begin{lstlisting}
+> install.packages("package_name") 
+\end{lstlisting}
+(assuming you have an internet connection and noticing that the symbol \texttt{>} indicates the beginning of a line of code in \texttt{R}). This command only needs to be executed one time.  Once a package is installed in your local \texttt{library} (a collection of packages) you can make it available to the current \R session by typing the command
+\begin{lstlisting}
+> library(package_name)
+\end{lstlisting}
+
+For these practicals, you will need to install and load the packages:
+\begin{itemize}
+\item \bcea, which can be used to post-process the results of a (Bayesian) model to perform a health economic evaluation. 
+\item \texttt{R2OpenBUGS}, which can be used to interface \R and \bugs.
+\end{itemize} 
+You do this by typing in your \R terminal the commands
+\begin{lstlisting}
+> install.packages("BCEA")
+> install.packages("R2OpenBUGS")
+> library(BCEA)
+> library(R2OpenBUGS)
+\end{lstlisting}
+Both \bcea and \texttt{R2OpenBUGS} will automatically load other packages that they \textit{depend on} --- this means that in order to work, they need to access functions that are part of other packages.
+
+If you wish so, you can use \texttt{JAGS} in the practicals. To this end (and assuming you have actually installed the current version of \texttt{JAGS} to your computer), you will need to also install the package \texttt{R2jags}, which you can do by typing in your \R terminal
+\begin{lstlisting}
+> install.packages("R2jags")
+\end{lstlisting}
+Notice that if you decide to use \jags instead of \bugs, you will need to slightly modify some of the commands --- we describe this in more details later in this manual.
+
+Once a package is loaded to your \R workspace, you can type the command \texttt{help(package\_name)}, which will open a window displaying a description of the package. For example \texttt{help(BCEA)} provides some basic information (including details of the current version). You can use the command \texttt{help} also on specific functions within the package, e.g.\ typing \texttt{help(bcea)} describes in detail how to use the \texttt{bcea} function (notice that in this case the package name is typeset in uppercase, while the function is lowercase!).
+
+The very basic commands that are required to do a typical \R session working with \bugs and \bcea will be given and described later or in the scripts that we refer to in the practicals.

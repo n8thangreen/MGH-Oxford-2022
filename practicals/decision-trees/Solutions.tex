@@ -1,0 +1,254 @@
+\documentclass[a4paper,twoside,openany]{../svmonoBUGS}\usepackage[]{graphicx}\usepackage[]{color}
+% maxwidth is the original width if it is less than linewidth
+% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\title{Bayesian methods in health economics \\ STAT3021/STATM021/STATG021}
+\author{Practicals}
+\date{January -- March 2018}
+
+\usepackage{xspace,graphicx,bm,amssymb,amsmath,url,graphics,inconsolata}
+\usepackage[text={15.2cm,22cm},centering]{geometry}
+\usepackage{inconsolata}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\usepackage{charter}
+\usepackage{tikz,verbatim,graphicx,color}
+%%%\usetikzlibrary{shapes,arrows,arrows.meta,decorations.pathreplacing,shapes.geometric}
+
+
+\newcommand{\winbugs}{{\texttt{WinBUGS}}\xspace}
+\newcommand{\openbugs}{{\texttt{OpenBUGS}}\xspace}
+\newcommand{\jags}{{\texttt{JAGS}}\xspace}
+\newcommand{\bugs}{{\texttt{BUGS}}\xspace}
+\newcommand{\R}{{\texttt{R}}\xspace}
+\newcommand{\bcea}{{\texttt{BCEA}}\xspace}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\fontsize{9}{11}\selectfont,breaklines=true,tabsize=2,
+keywords={},linewidth=1\textwidth,backgroundcolor=\color{black!5}} 
+
+\renewcommand{\chaptername}{Practical}
+
+\graphicspath{{/home/gianluca/Dropbox/EcSan/ShortCourses/BSU-UCL/LaTeX/}{/home/gianluca/Dropbox/UCL/3021/Lectures/figs/}}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\addtocounter{chapter}{7}
+\chapter{Decision trees --- SOLUTIONS}
+
+%
+\section{Running and analysing results}
+
+Run the file "practical.R".
+You can do this using the R command \texttt{source("practical.R")}
+
+The required R code is 
+
+\begin{verbatim}
+# Net benefit
+(net.benefit <- lambda.target * effects - costs)
+
+# Incremental results relative to no treatment
+(incremental.costs <- costs - costs[1])
+(incremental.effects <- effects - effects[1])
+(incremental.net.benefit <-
+    lambda.target * incremental.effects - incremental.costs)
+
+# Incremental cost effectiveness ratios relative to no treatment
+(icer <- incremental.costs / incremental.effects)
+\end{verbatim}
+
+Run the file "practical\_probs.R".
+To ensure the input parameters make sense, look at the means of matrices using the \texttt{colMeans()} function
+and the means of vectors using the \texttt{mean()} function
+
+For matrices, CBT has lowest probability of relapse
+\begin{verbatim}
+colMeans(p.rel)
+\end{verbatim}
+
+Antidepressant has the highest probability of recovery
+\begin{verbatim}
+colMeans(p.rec)
+\end{verbatim}
+
+Mean cost of treatment (these are actually constant!)
+\begin{verbatim}
+colMeans(c.treat)
+\end{verbatim}
+
+For vectors, Cost of no recovery
+\begin{verbatim}
+mean(c.norec)
+\end{verbatim}
+
+Cost of relapse
+\begin{verbatim}
+mean(c.rel)
+\end{verbatim}
+
+Cost of recovery
+\begin{verbatim}
+mean(c.rec)
+\end{verbatim}
+
+The cost of no recovery is highest, as patients incur higher hospitalization and therapy costs.
+QALYs of no recovery
+\begin{verbatim}
+mean(q.norec)
+\end{verbatim}
+
+QALYs of relapse
+\begin{verbatim}
+mean(q.rel)
+\end{verbatim}
+
+QALYs of recovery
+\begin{verbatim}
+mean(q.rec)
+\end{verbatim}
+
+The QALY for recovery is highest, as patients don't suffer a relapse and spend most of remaining 30 years if good mental health.
+
+\subsection{Summary of cost and effects}
+
+Mean QALYs of each treatment over 30 years.
+Very similar but antidepressants and CBT are higher than no treatment.
+\begin{verbatim}
+colMeans(effects)
+\end{verbatim}
+
+Mean costs
+CBT is the most expensive while no treatment and antidepressant are similar.
+\begin{verbatim}
+colMeans(costs)
+\end{verbatim}
+
+Calculate the net benefit at a willingess-to-pay of £20,000.
+\begin{verbatim}
+net.benefit <- 20000*effects-costs
+\end{verbatim}
+
+Net benefit is highest for antidepressant, but all options are very close.
+\begin{verbatim}
+colMeans(net.benefit)
+\end{verbatim}
+
+%
+\section{Using BCEA}
+
+If BCEA isn't yet installed you'll have to install BCEA first
+\begin{verbatim}
+install.packages("BCEA")
+\end{verbatim}
+
+Load the package
+\begin{verbatim}
+library(BCEA)
+\end{verbatim}
+
+\begin{itemize}
+\item Create a \texttt{bcea} object for the depression decision tree
+\texttt{e} are the effects, \texttt{c} are the costs
+Set the \texttt{ref} reference treatment to be 1 (no treatment)
+Set the interventions, which is the names of the treatments, to \texttt{t.names}
+\begin{verbatim}
+depression.bcea <- bcea(e=effects,c=costs,ref=1,interventions=t.names)
+\end{verbatim}
+
+\item
+The \texttt{summary()} gives comparisons of CBT and antidepressants to no treatment. 
+wtp is the willingness-to-pay threshold. The detafult to 25000 so set this to 20000
+The "EIB" is expected incremental benefit at the \texttt{wtp=20000}, the "CEAC" is the
+probability that the reference of "no treatment" has highest net benefit (most cost-effective), 
+and the ICER is the incremental cost-effectiveness ratio. 
+
+We can see that EIB is negative for no treatment relative to both CBT and antidepresants, so the latter two are favoured
+The CEAC is less than 0.5 so there is a higher probability that CBT and antidepressant are most cost-effective
+The ICER is less than £20,000 for both CBT and antidepressant so both should be considered cost-effective
+\begin{verbatim}
+summary(depression.bcea, wtp=20000) 
+\end{verbatim}
+
+\item
+Now comparing CBT to antidepressant
+Use the \texttt{bcea()} function but with \texttt{ref=2}, so that CBT is the reference treatment.
+All other inputs remain the same
+\begin{verbatim}
+depression.refCBT.bcea <- bcea(e=effects,c=costs,ref=2,interventions=t.names)
+\end{verbatim}
+
+The final matrix of EIB and CEAC are of interest.
+The first row are comparisons with no treatment which suggest CBT is more cost-effective as EIB is positive,
+CEAC>0.50. The ICER isn't useful for interpretation.
+The second row tells us that CBT has lower incremental net benefits (EIB is negative) and that the probability
+that CBT is more cost-effective than antidepressants is less than 50\% (CEAC<0.50)
+\begin{verbatim}
+summary(depression.refCBT.bcea, wtp=20000)
+\end{verbatim}
+
+\item Multiple treatment comparison
+For multiple treatment comparison pass the output of\texttt{ bcea()} to \texttt{multi.ce()}
+This may take a moment
+\begin{verbatim}
+depression.multi.ce <- multi.ce(depression.bcea)
+\end{verbatim}
+
+Now generate the probability that each treatment has the highest net benefit at
+a range of willingness-to-pay thresholds.
+These are the cost-effectiveness acceptability curves (CEAC).
+At £20,000, antidepressants have the highest probability of having highest net benefit (being most cost-effective).
+\begin{verbatim}
+ceac.plot(depression.multi.ce,
+          pos = c(1, 0.5))
+\end{verbatim}
+\includegraphics{multi\_ceac}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,150 @@
+\documentclass[a4paper,twoside,openany]{svmonoBUGS}
+
+\title{Health Economics in R}
+\author{Practicals}
+\date{University of Oxford 24th November 2022 \\ Nathan Green (UCL)}
+
+\usepackage{xspace,graphicx,bm,amssymb,amsmath,url,graphics,hyperref}	%,inconsolata	
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=30mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\usepackage{inconsolata}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\usepackage{charter}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shapes} 
+\tikzset{
+    %Define standard arrow tip
+    >=stealth',
+    %Define style for boxes
+    punkt/.style={
+           circle,
+           rounded corners,
+           draw=black, very thick,
+           %text width=6.5em,
+           minimum height=7em,
+           text centered,
+           font=\small\sffamily}
+}
+\usetikzlibrary{trees}
+\tikzstyle{decision} = [rectangle, minimum height=8pt, minimum width=8pt, draw=blue!10, ultra thick, inner sep=0pt] 
+\tikzstyle{chance} = [circle, minimum width=4pt, draw=blue!10, fill=blue!10, ultra thick, inner sep=0pt] 
+\tikzstyle{line} = [draw=none]
+\tikzstyle{line2} = [rectangle, minimum width=4pt, minimum height=.001pt, draw=black, inner sep=0pt]
+\tikzstyle{end} = [diamond, minimum width=3pt, minimum height=3pt, fill=red, inner sep=0pt, draw=red, thin]
+\tikzset{
+grow=right,
+join=miter,
+level 1/.style={sibling distance=2.4cm, level distance=3.0cm}, %2.5 / 3.0
+%level 2/.style={sibling distance=1.5cm, level distance=3.0cm},
+level 2/.style={sibling distance=1.3cm, level distance=2.5cm}, %1.5 / 2.5
+level 3/.style={sibling distance=1cm, level distance=3.0cm},
+edge from parent/.style={thick, draw=black},
+edge from parent fork right,
+%every node/.style={text centered, inner sep=1cm},
+align=center,
+anchor=west
+}
+
+\newenvironment{psmallmatrix}
+  {\left(\begin{smallmatrix}}
+  {\end{smallmatrix}\right)}
+
+\usepackage{pbox}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\fontsize{9.6}{10.5}\selectfont,breaklines=true,tabsize=2,
+keywords={},linewidth=.95\textwidth,backgroundcolor=\color{black!5}} 
+
+\newcommand{\NB}{\mbox{NB}}
+\newcommand{\INB}{\mbox{INB}}
+\newcommand{\E}{\mbox{E}}
+\newcommand{\winbugs}{{\texttt{WinBUGS}}\xspace}
+\newcommand{\openbugs}{{\texttt{OpenBUGS}}\xspace}
+\newcommand{\jags}{{\texttt{JAGS}}\xspace}
+\newcommand{\bugs}{{\texttt{BUGS}}\xspace}
+\newcommand{\R}{{\texttt{R}}\xspace}
+\newcommand{\bcea}{{\texttt{BCEA}}\xspace}
+
+\renewcommand{\chaptername}{Practical}
+
+%% Defines a switch to determine whether solutions should be shown or not
+%%%\newif\IfShowSol
+%%%\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+
+% Increases the space in the TOC for the subsubsections
+\makeatletter
+ \renewcommand*\l@subsection{\@dottedtocline{2}{40pt}{3.8em}}
+\makeatother
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\preface
+
+All the material needed to do these practical exercises is provided for you at the \href{https://n8thangreen.github.io/Stockholm-health-economics-course/}{course website} or in a zip file. This has one folder for each practical session / chapter of this document, and contains program code and data for \bugs and \R.
+
+Some of the practical sessions have a file containing solutions to the exercises, in the corresponding folder.   For some of the exercises, solutions are not necessary, since they simply consist of stepping through a script that has been provided.
+
+\section{Acknowledgements}
+This material is part taken from the annual Summer School in Bayesian Health Economics.
+Lectures and practical were created by Gianluca Baio, Howard Thom, Anna Heath, Nicky Best, Chris Jackson and others.
+Thanks to all those who have contributed to this work. 
+
+\include{R-intro}
+\include{decision-trees/practical}
+\include{markov-models/practical}
+
+
+\end{document}

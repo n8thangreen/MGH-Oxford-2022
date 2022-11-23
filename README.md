@@ -1,8 +1,10 @@
 # MSc-Oxford-2022
 
+* [Repo](https://github.com/n8thangreen/MSc-Oxford-2022)
+
 ## Lecture slides
 
-* [Repo](https://github.com/n8thangreen/MSc-Oxford-2022)
+* [Document](slides/talks.pdf)
 
 ## Practicals
 

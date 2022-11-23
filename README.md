@@ -11,6 +11,6 @@
   * [Folder](practicals/)
 
 * Solutions
-  * [decision trees](practicals/decision-trees/Solutions.pdf)
+  * [Decision trees](practicals/decision-trees/Solutions.pdf)
   * [Markov models](practicals/markov-models/Solutions.pdf)
   

@@ -1,4 +1,4 @@
-# MSc-Oxford-2022
+# MGH Oxford 2022
 
 * [Repo](https://github.com/n8thangreen/MSc-Oxford-2022)
 
